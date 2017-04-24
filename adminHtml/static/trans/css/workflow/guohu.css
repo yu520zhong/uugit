@@ -1,0 +1,33 @@
+.file-list {
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 20px;
+}
+.file-content {
+  position: relative;
+}
+.file-item {
+  float: left;
+  margin-right: 15px;
+
+}
+.file-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+}
+.file-content input[type=file] {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+}
+.file-content .file-sign {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background: url('../../img/add_sign.jpg') no-repeat center center;
+}

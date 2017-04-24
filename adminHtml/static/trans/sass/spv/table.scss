@@ -1,0 +1,63 @@
+.table-box {
+  padding: 0;
+}
+
+.table-box-copy {
+  padding: 0 120px;
+}
+
+.table thead tr th {
+  background-color: #4bccec;
+  font-size: 14px;
+  font-weight: normal;
+  color: #fff;
+}
+.table .spacing-table-one {
+  display: block;
+  width: 270px;
+}
+.table .spacing-table-two {
+  display: block;
+  width: 170px;
+}
+.table .top-spacing {
+  margin: 35px auto 20px;
+}
+.table .bottom-spacing {
+  margin: 0 auto 35px;
+}
+.table .num-input {
+  position: relative;
+  width: 270px;
+  margin: 0 auto;
+}
+.table .num-input-two {
+  position: relative;
+  width: 170px;
+  margin: 0 auto;
+}
+.table .spacing {
+  padding: 0 20px !important;
+}
+.table .unit {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.input-money {
+  position: relative;
+  margin-top: 20px;
+}
+
+.input-money label {
+  width: 52px;
+  text-align: right;
+  margin-right: 20px;
+  font-weight: normal;
+}
+.input-money .unit-two {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}

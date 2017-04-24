@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>资金监管信息中止/结束(总监审核)</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../static/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css" rel="stylesheet">
+
+    <!-- stickUp fixed css -->
+    <link rel="stylesheet" href="../static/css/plugins/stickup/stickup.css">
+    <link rel="stylesheet" href="../static/trans/css/common/stickmenu.css">
+
+    <link rel="stylesheet" href="../static/css/plugins/aist-steps/steps.css">
+    <link rel="stylesheet" href="../static/css/plugins/toastr/toastr.min.css">
+
+    <!-- index_css  -->
+    <link rel="stylesheet" href="../static/trans/css/spv/table.css" />
+    <link rel="stylesheet" href="../static/trans/css/spv/input.css" />
+    <link rel="stylesheet" href="../static/trans/css/spv/see.css" />
+    <link rel="stylesheet" href="../static/trans/css/spv/spv.css" />
+
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span>
+                                <img alt="image" class="img-circle" src="../static/img/profile_small.jpg"/>
+                            </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">
+                                            金姣姣
+                                        </strong>
+                                    </span>
+                                    <span class="text-muted text-xs block">
+                                        交易顾问
+                                    </span>
+                                    <span class="text-muted text-xs block">
+                                        虹口杨浦贵宾服务部A组
+                                        <b class="caret">
+                                        </b>
+                                    </span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                    <a href="#">
+                                        我的信息
+                                    </a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" onClick="LogoutUtils.logout();return false;">
+                                        注销
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            YUCUI+
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="../workbench/dashboard.html">
+                            <i class="fa fa-home">
+                            </i>
+                            <span class="nav-label">
+                                个人工作台
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-th-large">
+                            </i>
+                            <span class="nav-label">
+                                我的案件
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../workflow/myCaseList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    案件总览
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../workflow/caseDistribute.html">
+                                    <i class="fa ">
+                                    </i>
+                                    待分配案件
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../workflow/myTaskList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    待办任务
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../workflow/unlocatedTasks.html">
+                                    <i class="fa ">
+                                    </i>
+                                    无主任务
+                                </a>
+                            </li>
+                            <li>
+                                <a href="unlocatedCase.html">
+                                    <i class="fa ">
+                                    </i>
+                                    无主案件
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tracking.html">
+                                    <i class="fa ">
+                                    </i>
+                                    案件追踪
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mortgageApproveLost.html">
+                                    <i class="fa ">
+                                    </i>
+                                    流失案件
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../workflow/toTaskOfGroupList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    本组待办列表
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <i class="fa fa-glass">
+                            </i>
+                            <span class="nav-label">
+                                E+贷款
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../eloan/eloan_index.html">
+                                    <i class="fa ">
+                                    </i>
+                                    E+贷款主页列表
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../eloan/eloan_detail.html">
+                                    <i class="fa ">
+                                    </i>
+                                    E+贷款详情
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                佣金管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="../award/read.html">
+                                    <i class="fa ">
+                                    </i>
+                                    佣金查看
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/personBonus.html">
+                                    <i class="fa ">
+                                    </i>
+                                    我的计件奖金
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/baseAward.html">
+                                    <i class="fa ">
+                                    </i>
+                                    我的基础计件奖金
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/baseAwardReport.html">
+                                    <i class="fa ">
+                                    </i>
+                                    计件奖金报表
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/baseAwardReport.html">
+                                    <i class="fa ">
+                                    </i>
+                                    可计件奖金案件筛选
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="">
+                            <i class="fa fa-glass">
+                            </i>
+                            <span class="nav-label">
+                                资金监管
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../spv/spvCaseList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    监管合约列表
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/spvRetainsItems.html">
+                                    <i class="fa ">
+                                    </i>
+                                    扣押物品列表
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/see.html">
+                                    <i class="fa ">
+                                    </i>
+                                    资金监管详情
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="../spv/spvDetails.html">
+                                    <i class="fa ">
+                                    </i>
+                                    资金监管信息填写
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/waterDetail.html">
+                                    <i class="fa ">
+                                    </i>
+                                    监管资金出入账流水
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/spvApply.html">
+                                    <i class="fa ">
+                                    </i>
+                                    监管资金出入账申请
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/spvRecorded2.html">
+                                    <i class="fa ">
+                                    </i>
+                                    入账审批驳回
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/spvRecordShow.html">
+                                    <i class="fa ">
+                                    </i>
+                                    入账申请审批意见
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/outAccount.html">
+                                    <i class="fa ">
+                                    </i>
+                                    出账审批驳回
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/outAccountop.html">
+                                    <i class="fa ">
+                                    </i>
+                                    出账申请审核意见
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/outAccountoption.html">
+                                    <i class="fa ">
+                                    </i>
+                                    出账
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/spvRecorded.html">
+                                    <i class="fa ">
+                                    </i>
+                                    入账
+                                </a>
+                            </li>
+                        </ul>
+
+
+
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-comment">
+                            </i>
+                            <span class="nav-label">
+                                产调结果
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../propertyresearch/processWaitList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    待处理产调
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/processingList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    已受理产调
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/successList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    已完成产调
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/resultGet.html">
+                                    <i class="fa ">
+                                    </i>
+                                    产调结果
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                            <a href="#">
+                                <i class="fa fa-th-large">
+                                </i>
+                                <span class="nav-label">
+                                    报表
+                                </span>
+                                <span class="fa arrow">
+                                </span>
+                            </a>
+                            <ul class="nav nav-second-level collapse">
+                                <li class="">
+                                    <a href="../report/district.html">
+                                        <i class="fa ">
+                                        </i>
+                                        区域报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../workflow/caseDistribute.html">
+                                        <i class="fa ">
+                                        </i>
+                                        金融产品报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../workflow/myTaskList.html">
+                                        <i class="fa ">
+                                        </i>
+                                        评估费报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/satisfactionDegree.html">
+                                        <i class="fa ">
+                                        </i>
+                                        满意度
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../workflow/unlocatedTasks.html">
+                                        <i class="fa ">
+                                        </i>
+                                        贷款流失报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/gageInfo.html">
+                                        <i class="fa ">
+                                        </i>
+                                        临时银行案件列表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/sourceReport.html">
+                                        <i class="fa ">
+                                        </i>
+                                        产调来源报表
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tracking.html">
+                                        <i class="fa ">
+                                        </i>
+                                        案件工作量详情
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                贷款信息列表
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的贷款
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本组贷款
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本区贷款
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    贷款清单
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                临时银行模块
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本组临时银行申请
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本区临时银行申请
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    所有临时银行申请
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                贷款流失模块
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失单量分析
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失金额分析
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失区域分布分析
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失贵宾中心分析
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                资金监管合约管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    申请转合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    录入监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    保存监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    提交监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    检查交易异常
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本组监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本区监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    监管合约清单
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                入款/放款方案管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    增加放款方案
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    查看放款方案
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    变更放款方案
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    审批放款方案变更
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    检查放款方案变更
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                销售管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    评估费收取单转化率
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    评估费打折系数
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                工作质量管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    客户满意度导入
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    客户满意度查看
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    客户满意度汇总
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                业绩/奖金模块
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    可计件案件池查看
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    可计件案件池导出
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    计件基础奖金计算
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    计件基础奖金归集
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    计件奖金计算
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-calendar-o">
+                            </i>
+                            <span class="nav-label">
+                                知识管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    知识库
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的知识
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-user">
+                            </i>
+                            <span class="nav-label">
+                                个人设置
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的信息
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    授权代办
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-warning " href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <div class="navbar-header" style="margin-left: 30%;"><h2 class="welcome">欢迎使用誉萃交易平台！</h2><iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <span class="m-r-sm text-muted welcome-message">    </span>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope"></i>  <span class="label label-warning" id="sp_badge">766</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages" id="messageul">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            跟进提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-NAJ-201607-0863，地址为上海杨浦区五角场街道国权路43号独栋号2411室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            跟进提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-NAJ-201607-0866，地址为上海杨浦区五角场镇市京一村13号0502室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            临时银行处理提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-AJ-201605-1527，地址为上海黄浦区西藏南路片区西藏南路1374弄21号0403室的案件临时银行已经处理. 临时银行为顾村公园支行(其他),
+                                        请及时跟进.
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            跟进提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-NAJ-201607-0862，地址为上海杨浦区五角场街道国权路43号独栋号2410室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            跟进提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-NAJ-201607-0865，地址为上海杨浦区五角场镇浣纱六村(浣沙六村)31号0603室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li class="text-center link-block">
+                                <div>
+                                </div>
+                                <a href="http://trade.centaline.com:8083/trade-web/message/box/siteList.html"
+                                target="messageContent">
+                                    <i class="fa fa-envelope">
+                                    </i>
+                                    <strong>
+                                        去消息中心
+                                    </strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        切换岗位
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs" id="portalOrgJob">
+                    <li><a href="javascript:void(0);" onclick="orgJob.changeOrgJob(&quot;8dc9766035cc47819e7eb28ad2c16bc6&quot;,&quot;ff8080814f459a78014f45ab2c39000d&quot;)">交易顾问@虹口杨浦贵宾服务部A组</a></li></ul>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+            <!-- main Start -->
+            <div class="row wrapper border-bottom white-bg page-heading stickup-nav-bar">
+               <ul class="nav navbar-nav">
+                <li class="menuItem active"><a href="#">客户信息</a></li>
+                <li class="menuItem"><a href="#">房产及交易信息</a></li>
+                <li class="menuItem"><a href="#">监管资金及账户信息</a></li>
+                <li class="menuItem"><a href="#">资金方案填写</a></li>
+                <li class="menuItem"><a href="#">上传备件</a></li>
+                <li class="menuItem"><a href="#">"中止/结束"流程</a></li>
+            </ul>
+            </div>
+            <div class="row" style="margin-top: 0px;">
+            <div class="wrapper wrapper-content animated fadeInUp">
+                                <!-- <div class="ibox"> -->
+
+                <!-- <div class="ibox"> -->
+                <div class="ibox-content" id="base_info">
+                    <form class="form-inline">
+                        <input type="hidden" id="handle" name="handle" value="SpvSign" readonly="">
+                        <div class="title">买方客户信息</div>
+                        <div class="form-row form-rowbot clear">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="spvCustList[0].pkid" value="532" readonly="">
+                                <input type="hidden" name="spvCustList[0].tradePosition" value="BUYER" readonly="">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 姓名</label> <input name="spvCustList[0].name" value="王女士" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 手机号码</label> <input name="spvCustList[0].phone" value="13815685579" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one ">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 性别</label> <span class="sex-char"> <label class="radio-inline"> <input type="radio" name="spvCustList[0].gender" id="sex1" value="1" readonly="" disabled="">
+                                        男
+                                </label> <label class="radio-inline"> <input type="radio" name="spvCustList[0].gender" id="sex2" value="0" checked="checked" readonly="" disabled=""> 女
+                                </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件类型</label>
+                                    <select ltype="select" id="spvCustList[0].idType" name="spvCustList[0].idType" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="SFZ" selected="selected">身份证</option><option value="JGZ">军官证</option><option value="WGHZ">外国护照</option><option value="XGSFZ">香港身份证</option><option value="TBZ">台胞证</option><option value="QT">其他</option><option value="ZGHZ">中国护照</option><option value="GATXZ">港澳通行证</option></select>
+
+                            </div>
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件有效期</label>
+                                <input id="date-picker0" name="spvCustList[0].idValiDate" class="form-control input-one date-picker" style="font-size: 13px;" type="text" value="3000-01-01" placeholder="" readonly="" disabled="">
+                                <input id="longTerm0" type="radio" readonly="" disabled="" checked="checked">长期有效
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件编号</label> <input name="spvCustList[0].idCode" value="111222333444555666" type="text" class="form-control input-two" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one">发证机关</label> <input type="text" name="spvCustList[0].idIssueInst" value="" class="form-control input-four" placeholder="" readonly="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 家庭地址</label> <input name="spvCustList[0].homeAddr" value="家庭一" type="text" class="form-control input-five" placeholder="" readonly="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one">委托他人办理</label> <label class="radio-inline"> <input type="radio" name="spvCustList[0].hasDele" id="BuyRadio1" value="1" readonly="" disabled=""> 是
+                                </label> <label class="radio-inline"> <input type="radio" name="spvCustList[0].hasDele" id="BuyRadio2" value="0" checked="checked" readonly="" disabled=""> 否
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent buyinfo" style="display: none;">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 姓名</label> <input type="text" name="spvCustList[0].agentName" value="" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one left-extent buyinfo" style="display: none;">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件类型</label>
+                                    <select ltype="select" id="spvCustList[0].agentIdType" name="spvCustList[0].agentIdType" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="SFZ" selected="selected">身份证</option><option value="JGZ">军官证</option><option value="WGHZ">外国护照</option><option value="XGSFZ">香港身份证</option><option value="TBZ">台胞证</option><option value="QT">其他</option><option value="ZGHZ">中国护照</option><option value="GATXZ">港澳通行证</option></select>
+
+                            </div>
+                            <div class="form-group form-margin form-space-one buyinfo" style="display: none;">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件编号</label> <input type="text" name="spvCustList[0].agentIdCode" value="" class="form-control input-two" placeholder="" readonly="">
+                            </div>
+                        </div>
+                    </form>
+                    <form class="form-inline">
+                        <div class="title">卖方客户信息</div>
+
+                        <div class="form-row form-rowbot clear">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="spvCustList[1].pkid" value="533" readonly="">
+                                <input type="hidden" name="spvCustList[1].tradePosition" value="SELLER" readonly="">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 姓名</label> <input type="text" name="spvCustList[1].name" value="黄雪峰" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 手机号码</label> <input name="spvCustList[1].phone" value="13621916791" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one ">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 性别</label> <span class="sex-char"> <label class="radio-inline"> <input type="radio" name="spvCustList[1].gender" id="sex3" value="1" checked="checked" readonly="" disabled="">
+                                        男
+                                </label> <label class="radio-inline"> <input type="radio" name="spvCustList[1].gender" id="sex4" value="0" readonly="" disabled=""> 女
+                                </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件类型</label>
+                                    <select ltype="select" id="spvCustList[1].idType" name="spvCustList[1].idType" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="SFZ" selected="selected">身份证</option><option value="JGZ">军官证</option><option value="WGHZ">外国护照</option><option value="XGSFZ">香港身份证</option><option value="TBZ">台胞证</option><option value="QT">其他</option><option value="ZGHZ">中国护照</option><option value="GATXZ">港澳通行证</option></select>
+
+                            </div>
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件有效期</label>
+                                <input id="date-picker1" name="spvCustList[1].idValiDate" class="form-control input-one date-picker" style="font-size: 13px;" type="text" value="3000-01-01" placeholder="" readonly="" disabled="">
+                                <input id="longTerm1" type="radio" readonly="" disabled="" checked="checked">长期有效
+                            </div>
+
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件编号</label> <input type="text" name="spvCustList[1].idCode" value="111222333444555666" class="form-control input-two" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one">发证机关</label> <input type="text" name="spvCustList[1].idIssueInst" value="" class="form-control input-four" placeholder="" readonly="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 家庭地址</label> <input name="spvCustList[1].homeAddr" value="家庭二" type="text" class="form-control input-five" placeholder="" readonly="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one">委托他人办理</label> <label class="radio-inline"> <input type="radio" name="spvCustList[1].hasDele" id="SellRadio1" value="1" readonly="" disabled=""> 是
+                                </label> <label class="radio-inline"> <input type="radio" name="spvCustList[1].hasDele" id="SellRadio2" value="0" checked="checked" readonly="" disabled=""> 否
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent sellinfo" style="display: none;">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 姓名</label> <input type="text" name="spvCustList[1].agentName" value="" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one left-extent sellinfo" style="display: none;">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件类型</label>
+                                        <select ltype="select" id="spvCustList[1].agentIdType" name="spvCustList[1].agentIdType" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="SFZ" selected="selected">身份证</option><option value="JGZ">军官证</option><option value="WGHZ">外国护照</option><option value="XGSFZ">香港身份证</option><option value="TBZ">台胞证</option><option value="QT">其他</option><option value="ZGHZ">中国护照</option><option value="GATXZ">港澳通行证</option></select>
+                            </div>
+                            <div class="form-group form-margin form-space-one sellinfo" style="display: none;">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 证件编号</label> <input type="text" name="spvCustList[1].agentIdCode" value="" class="form-control input-two" placeholder="" readonly="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="ibox-content" id="spvone_info">
+                    <form class="form-inline">
+                        <div class="title">房产及交易信息</div>
+                        <div class="form-row form-rowbot clear">
+                        <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 房产权利人</label> <input name="toSpvProperty.prOwnerName" type="text" class="form-control input-one" placeholder="" value="黄雪峰" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="toSpvProperty.pkid" value="245" readonly="">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 房产证号</label> <input name="toSpvProperty.prNo" type="text" class="form-control input-five" placeholder="" value="房123" readonly="">
+                            </div>
+
+                            <!-- <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one">委托人姓名</label> <input  type="text"
+                                    class="form-control input-one" placeholder="" value="">
+                            </div> -->
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 面积</label> <input name="toSpvProperty.prSize" type="text" class="form-control input-one" placeholder="" value="100.00" readonly="">
+                                    <span class="date_icon">㎡</span>
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 产证地址</label> <input name="toSpvProperty.prAddr" type="text" class="form-control input-five" placeholder="" value="上海闵行区北莘庄片区申北路135弄49号0502室" readonly="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot"></div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-two">是否偿清</label> <label class="radio-inline"> <input type="radio" name="toSpvProperty.isMortClear" id="Pledge1" value="1" checked="checked" readonly="" disabled=""> 是
+                                </label> <label class="radio-inline"> <input type="radio" name="toSpvProperty.isMortClear" id="Pledge2" value="0" readonly="" disabled=""> 否
+                                </label> <span class="span-tag pledgeinfo" style="display: none;">交易房屋抵押贷信息</span>
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent pledgeinfo" style="display: none;">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 抵押方</label> <input type="text" name="toSpvProperty.mortgageeName" class="form-control input-one" placeholder="" value="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one pledgeinfo" style="display: none;">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 开户行</label> <input name="toSpvProperty.mortgageeBank" value="" type="text" class="form-control input-four" placeholder="" readonly="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent pledgeinfo" style="display: none;">
+                                <label for="" class="lable-one">未偿还金额</label> <input name="toSpvProperty.leftAmount" value="" type="text" class="form-control input-one" placeholder="" readonly=""><span class="date_icon">万元</span>
+                            </div>
+                            <div class="form-group form-margin form-space-one pledgeinfo" style="display: none;">
+                                <label for="" class="lable-one">金额大写</label> <input type="text" id="leftAmountDX" readonly="" class="form-control input-two" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 网签合同号</label> <input name="toSpvProperty.signNo" value="111" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <!-- <div class="form-group form-margin form-space-one pledgeinfo">
+                                <label for="" class="lable-one">金额大写</label> <input type="text"
+                                    class="form-control input-one" placeholder="">
+                            </div> -->
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 网签金额</label> <input name="toSpvProperty.signAmount" value="692.00" type="text" class="form-control input-one" placeholder="" readonly=""> <span class="date_icon">万元</span>
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                            <label for="" class="lable-one">金额大写</label> <input type="text" id="signAmountDX" readonly="" class="form-control input-two" placeholder="">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="ibox-content" id="spvtwo_info">
+                    <form class="form-inline">
+                        <input type="hidden" name="toSpv.pkid" value="223" readonly="">
+                        <input type="hidden" name="toSpv.caseCode" value="ZY-AJ-201601-2597" readonly="">
+                        <input type="hidden" name="toSpv.spvCode" value="ZY-JG-201611-0108" readonly="">
+                        <input type="hidden" name="toSpv.applyTime" value="Thu Nov 10 15:36:11 CST 2016" readonly="">
+                        <div class="title">监管资金及账户信息</div>
+                        <div class="form-row form-rowbot clear">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 监管总金额</label> <input name="toSpv.amount" value="690.00" type="text" class="form-control input-one" placeholder="" readonly=""> <span class="date_icon">万元</span>
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one">金额大写</label> <input type="text" id="amountDX" readonly="" class="form-control input-two" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 监管产品</label>
+                                    <select name="toSpv.prdCode" class="form-control input-two" value="1" disabled="">
+                                    <option value="1">光大四方资金监管</option>
+                                    </select>
+
+                            </div>
+                        </div>
+                        <div class="title">监管资金的支付</div>
+                        <div class="form-row form-rowbot clear">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 下家付款方式</label>
+                                <select ltype="select" id="toSpv.buyerPayment" name="toSpv.buyerPayment" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="1">全款</option><option value="2">纯商业贷款</option><option value="3" selected="selected">组合贷款</option><option value="4">纯公积金贷款</option></select>
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one">自筹资金</label> <input name="toSpv.amountOwn" value="90.00" type="text" class="form-control input-one" placeholder="" readonly=""> <span class="date_icon">万元</span>
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one">金额大写</label> <input type="text" id="amountOwnDX" readonly="" class="form-control input-two" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                        <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 贷款资金</label> <input name="toSpv.amountMort" value="600.00" type="text" class="form-control input-one" placeholder="" readonly="">
+                                    <span class="date_icon">万元</span>
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one">金额大写</label> <input type="text" id="amountMortDX" readonly="" class="form-control input-two" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one" style="margin-left:28px;">
+                                <label for="" class="rate"><i style="color:red;">*</i> 其中： 商业贷款</label> <input name="toSpv.amountMortCom" value="500.00" type="text" class="form-control input-one" placeholder="" readonly=""> <span class="date_icon">万元</span>
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one">金额大写</label> <input type="text" id="amountMortComDX" readonly="" class="form-control input-two" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one" style="margin-left:55px;">
+                                <label for="" class="rate"><i style="color:red;">*</i> 公积金贷款</label> <input name="toSpv.amountMortPsf" value="100.00" type="text" class="form-control input-one" placeholder="" readonly=""> <span class="date_icon">万元</span>
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one">金额大写</label> <input type="text" id="amountMortPsfDX" readonly="" class="form-control input-two" placeholder="">
+                            </div>
+                        </div>
+                        <div class="title">资金监管账号信息</div>
+                        <div class="form-row form-rowbot clear">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="toSpvAccountList[1].pkid" value="1105" readonly="">
+                                <input type="hidden" name="toSpvAccountList[1].accountType" value="SELLER" readonly="">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 卖方收款账号名称</label> <input name="toSpvAccountList[1].name" value="卖方" onblur="updateAccTypeOptions()" type="text" class="form-control input-one" placeholder="">
+                            </div>
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 账号</label> <input name="toSpvAccountList[1].account" value="111222333444555666" type="text" class="form-control input-two" placeholder="">
+                            </div>
+
+                        </div>
+                        <div class="form-row form-rowbot">
+                        <div class="form-group form-margin form-space-one">
+                            <label for="" class="lable-one"><i style="color:red;">*</i> 电话</label> <input name="toSpvAccountList[1].telephone" value="13611111111" type="text" class="form-control input-one" placeholder="">
+                        </div>
+                        <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 开户行</label>
+                                    <input type="text" id="bank_1" name="toSpvAccountList[1].bank" class="form-control input-two es-input" value="" placeholder="请选择">
+                                    <input type="text" name="toSpvAccountList[1].branchBank" class="form-control input-two es-input" value="" placeholder="请选择">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="toSpvAccountList[0].pkid" value="1104" readonly="">
+                                <input type="hidden" name="toSpvAccountList[0].accountType" value="BUYER" readonly="">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 买方退款账号名称</label> <input name="toSpvAccountList[0].name" value="买方" onblur="updateAccTypeOptions()" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 账号</label> <input name="toSpvAccountList[0].account" value="111222333444555666" type="text" class="form-control input-two" placeholder="" readonly="">
+                            </div>
+
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 电话</label> <input name="toSpvAccountList[0].telephone" value="13622222222" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 开户行</label>
+                                    <input type="text" id="bank_0" name="toSpvAccountList[0].bank" class="form-control input-two es-input" value="延安西路古北路支行" disabled="disabled" placeholder="请选择">
+                                    <input type="text" name="toSpvAccountList[0].branchBank" class="form-control input-two es-input" value="" disabled="disabled" placeholder="请选择">
+                            </div>
+                        </div>
+
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="toSpvAccountList[2].pkid" value="1106" readonly="">
+                                <input type="hidden" name="toSpvAccountList[2].accountType" value="SPV" readonly="">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 托管账户名称</label>
+                                <select name="toSpvAccountList[2].name" class="form-control input-two" disabled="">
+                                <option value="上海中原物业顾问有限公司">上海中原物业顾问有限公司</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 账号</label> <input type="text" name="toSpvAccountList[2].account" readonly="" value="76310188000148842" class="form-control input-two" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="toSpvAccountList[3].pkid" value="1107" readonly="">
+                                <input type="hidden" name="toSpvAccountList[3].accountType" value="FUND" readonly="">
+                                <label for="" class="lable-one">资金方账户名称</label>
+                                <select name="toSpvAccountList[3].name" value="搜易贷（北京）金融信息服务有限公司" class="form-control input-two" disabled="">
+                                <option value="">请选择</option>
+                                <option value="搜易贷（北京）金融信息服务有限公司" selected="selected">搜易贷（北京）金融信息服务有限公司</option>
+                                <option value="上海嘉定及时雨小额贷款股份有限公司">上海嘉定及时雨小额贷款股份有限公司</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one">账号</label> <input type="text" name="toSpvAccountList[3].account" readonly="" value="137441512010000275" class="form-control input-two" placeholder="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one">开户行</label> <input type="text" name="toSpvAccountList[3].branchBank" readonly="" value="" class="form-control input-three" placeholder="">
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="toSpvAccountList[4].pkid" value="1108" readonly="">
+                                <input type="hidden" name="toSpvAccountList[4].accountType" value="CUSTOM_4" readonly="">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 账号名称</label> <input name="toSpvAccountList[4].name" value="账号一" onblur="updateAccTypeOptions()" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 账号</label> <input name="toSpvAccountList[4].account" value="111222333444555666" type="text" class="form-control input-two" placeholder="" readonly="">
+                            </div>
+
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 电话</label> <input name="toSpvAccountList[4].telephone" value="13633333333" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 开户行</label>
+                                    <input type="text" id="bank_4" name="toSpvAccountList[4].bank" class="form-control input-two es-input" value="延安西路古北路支行" disabled="disabled" placeholder="请选择">
+                                    <input type="text" name="toSpvAccountList[4].branchBank" class="form-control input-two es-input" value="" disabled="disabled" placeholder="请选择">
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="toSpvAccountList[5].pkid" value="1109" readonly="">
+                                <input type="hidden" name="toSpvAccountList[5].accountType" value="CUSTOM_5" readonly="">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 账号名称</label> <input name="toSpvAccountList[5].name" value="账号二" onblur="updateAccTypeOptions()" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 账号</label> <input name="toSpvAccountList[5].account" value="111222333444555666" type="text" class="form-control input-two" placeholder="" readonly="">
+                            </div>
+
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 电话</label> <input name="toSpvAccountList[5].telephone" value="13644444444" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 开户行</label>
+                                    <input type="text" id="bank_5" name="toSpvAccountList[5].bank" class="form-control input-two es-input" value="延安西路古北路支行" disabled="disabled" placeholder="请选择">
+                                    <input type="text" name="toSpvAccountList[5].branchBank" class="form-control input-two es-input" value="" disabled="disabled" placeholder="请选择">
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <input type="hidden" name="toSpvAccountList[6].pkid" value="1110" readonly="">
+                                <input type="hidden" name="toSpvAccountList[6].accountType" value="CUSTOM_6" readonly="">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 账号名称</label> <input name="toSpvAccountList[6].name" value="账号三" onblur="updateAccTypeOptions()" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 账号</label> <input name="toSpvAccountList[6].account" value="111222333444555666" type="text" class="form-control input-two" placeholder="" readonly="">
+                            </div>
+
+                        </div>
+                        <div class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 电话</label> <input name="toSpvAccountList[6].telephone" value="13655555555" type="text" class="form-control input-one" placeholder="" readonly="">
+                            </div>
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 开户行</label>
+                                    <input type="text" id="bank_6" name="toSpvAccountList[6].bank" class="form-control input-two es-input" value="延安西路古北路支行" disabled="disabled" placeholder="请选择">
+                                    <input type="text" name="toSpvAccountList[6].branchBank" class="form-control input-two es-input" value="" disabled="disabled" placeholder="请选择">
+
+                            </div>
+                        </div>
+
+
+
+
+                        <div id="spvAccDiv" class="form-row form-rowbot">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 申请人</label>
+                                <input type="hidden" id="userName" name="toSpv.applyUser" value="8a8493d55184b1e701518fbf7d2306fa" readonly="">
+                                <input type="text" id="realName" style="background-color:#FFFFFF" readonly="" class="form-control" onclick="userSelect({startOrgId:&#39;&#39;,expandNodeId:&#39;&#39;,
+                                                nameType:&#39;long|short&#39;,orgType:&#39;&#39;,departmentType:&#39;&#39;,departmentHeriarchy:&#39;&#39;,chkStyle:&#39;radio&#39;,callBack:selectUserBack})" value="施俊嵘" disabled="">
+                                <input type="hidden" id="team" name="toSpv.applyTeam" value="FF5BC56E0E4B45289DAA5721A494C7C5" readonly="">
+                            <div class="input-group float_icon organize_icon">
+                                        <i class="icon iconfont"></i>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row form-rowbot" id="signDiv" style="">
+                            <div class="form-group form-margin form-space-one">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 监管合同号</label> <input type="text" name="toSpv.spvConCode" value="" class="form-control input-two" placeholder="">
+                            </div>
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <label for="" class="lable-one"><i style="color:red;">*</i> 签约时间</label>
+                                <input id="date-picker2" name="toSpv.signTime" class="form-control input-one date-picker" style="font-size: 13px;" type="text" value="" placeholder="">
+                            </div>
+                        </div>
+
+
+                    <div class="form-row form-rowbot" id="passOrRefuseReasonForShow" style="display:none;">
+                        <div class="form-group form-margin form-space-one">
+                            <label class="lable-one" style="text-align: right;"><i style="color:red;">*</i> 审批意见</label>
+                            <div class="form-group form-margin form-space-one left-extent">
+                                <textarea class="form-control input-five" rows="2" id="passOrRefuseReason" name="passOrRefuseReason"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="ibox-content" id="spvthree_info">
+                    <div class="agree-tile">资金出款约定</div>
+                    <form class="form-inline table-capital">
+                        <p>
+                            监管资金次数合计<span id="sum"> 7</span> 次
+                        </p>
+                        <div class="table-box">
+                            <table class="table table-bordered customerinfo">
+                                <thead>
+                                    <tr><th>划转条件</th>
+                                    <th>账户</th>
+                                    <th style="width: 16%;">金额</th>
+                                    <th>备注</th>
+                                    <th>操作</th>
+                                </tr></thead>
+                                <tbody id="addTr">
+                                  <input type="hidden" id="toSpvDeDetailListSize" value="7" readonly="">
+                                  <input type="hidden" name="ToSpvDe.pkid" value="257" readonly="">
+
+                                    <tr align="center">
+                                        <td class="text-left">
+                                        <input type="hidden" name="toSpvDeDetailList[0].pkid" value="820" readonly="">
+                                        <select ltype="select" id="toSpvDeDetailList[0].deCondCode" name="toSpvDeDetailList[0].deCondCode" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="01" selected="selected">满足过户收件收据</option><option value="02">出新产证</option><option value="03">物业结清</option><option value="04">其他</option></select>
+                                        </td>
+                                        <td class="text-left">
+                                        <select name="toSpvDeDetailList[0].payeeAccountType" value="SELLER" class="table-select" onchange="this.value" disabled=""><option value="">请选择</option><option value="SELLER">卖方(卖方账户)</option><option value="BUYER">买方(买方账户)</option><option value="FUND">搜易贷（北京）金融信息服务有限公司(资金方账户)</option><option value="CUSTOM_4">账号一(新添加)</option><option value="CUSTOM_5">账号二(新添加)</option><option value="CUSTOM_6">账号三(新添加)</option></select>
+                                        </td>
+                                        <td><input name="toSpvDeDetailList[0].deAmount" value="10.00" class="table-input-one" type="text" placeholder="请输入金额" readonly="">万元</td>
+                                        <td class="text-left"><input name="toSpvDeDetailList[0].deAddition" value="1" class="table-input" type="text" placeholder="" readonly=""></td>
+                                        <td align="center">
+
+                                    </td></tr>
+
+                                    <tr align="center">
+                                        <td class="text-left">
+                                        <input type="hidden" name="toSpvDeDetailList[1].pkid" value="821" readonly="">
+                                        <select ltype="select" id="toSpvDeDetailList[1].deCondCode" name="toSpvDeDetailList[1].deCondCode" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="01" selected="selected">满足过户收件收据</option><option value="02">出新产证</option><option value="03">物业结清</option><option value="04">其他</option></select>
+                                        </td>
+                                        <td class="text-left">
+                                        <select name="toSpvDeDetailList[1].payeeAccountType" value="FUND" class="table-select" onchange="this.value" disabled=""><option value="">请选择</option><option value="SELLER">卖方(卖方账户)</option><option value="BUYER">买方(买方账户)</option><option value="FUND">搜易贷（北京）金融信息服务有限公司(资金方账户)</option><option value="CUSTOM_4">账号一(新添加)</option><option value="CUSTOM_5">账号二(新添加)</option><option value="CUSTOM_6">账号三(新添加)</option></select>
+                                        </td>
+                                        <td><input name="toSpvDeDetailList[1].deAmount" value="20.00" class="table-input-one" type="text" placeholder="请输入金额" readonly="">万元</td>
+                                        <td class="text-left"><input name="toSpvDeDetailList[1].deAddition" value="2" class="table-input" type="text" placeholder="" readonly=""></td>
+                                        <td align="center">
+
+                                    </td></tr>
+
+                                    <tr align="center">
+                                        <td class="text-left">
+                                        <input type="hidden" name="toSpvDeDetailList[2].pkid" value="822" readonly="">
+                                        <select ltype="select" id="toSpvDeDetailList[2].deCondCode" name="toSpvDeDetailList[2].deCondCode" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="01" selected="selected">满足过户收件收据</option><option value="02">出新产证</option><option value="03">物业结清</option><option value="04">其他</option></select>
+                                        </td>
+                                        <td class="text-left">
+                                        <select name="toSpvDeDetailList[2].payeeAccountType" value="CUSTOM_4" class="table-select" onchange="this.value" disabled=""><option value="">请选择</option><option value="SELLER">卖方(卖方账户)</option><option value="BUYER">买方(买方账户)</option><option value="FUND">搜易贷（北京）金融信息服务有限公司(资金方账户)</option><option value="CUSTOM_4">账号一(新添加)</option><option value="CUSTOM_5">账号二(新添加)</option><option value="CUSTOM_6">账号三(新添加)</option></select>
+                                        </td>
+                                        <td><input name="toSpvDeDetailList[2].deAmount" value="60.00" class="table-input-one" type="text" placeholder="请输入金额" readonly="">万元</td>
+                                        <td class="text-left"><input name="toSpvDeDetailList[2].deAddition" value="3" class="table-input" type="text" placeholder="" readonly=""></td>
+                                        <td align="center">
+
+                                    </td></tr>
+
+                                    <tr align="center">
+                                        <td class="text-left">
+                                        <input type="hidden" name="toSpvDeDetailList[3].pkid" value="823" readonly="">
+                                        <select ltype="select" id="toSpvDeDetailList[3].deCondCode" name="toSpvDeDetailList[3].deCondCode" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="01">满足过户收件收据</option><option value="02" selected="selected">出新产证</option><option value="03">物业结清</option><option value="04">其他</option></select>
+                                        </td>
+                                        <td class="text-left">
+                                        <select name="toSpvDeDetailList[3].payeeAccountType" value="FUND" class="table-select" onchange="this.value" disabled=""><option value="">请选择</option><option value="SELLER">卖方(卖方账户)</option><option value="BUYER">买方(买方账户)</option><option value="FUND">搜易贷（北京）金融信息服务有限公司(资金方账户)</option><option value="CUSTOM_4">账号一(新添加)</option><option value="CUSTOM_5">账号二(新添加)</option><option value="CUSTOM_6">账号三(新添加)</option></select>
+                                        </td>
+                                        <td><input name="toSpvDeDetailList[3].deAmount" value="100.00" class="table-input-one" type="text" placeholder="请输入金额" readonly="">万元</td>
+                                        <td class="text-left"><input name="toSpvDeDetailList[3].deAddition" value="4" class="table-input" type="text" placeholder="" readonly=""></td>
+                                        <td align="center">
+
+                                    </td></tr>
+
+                                    <tr align="center">
+                                        <td class="text-left">
+                                        <input type="hidden" name="toSpvDeDetailList[4].pkid" value="824" readonly="">
+                                        <select ltype="select" id="toSpvDeDetailList[4].deCondCode" name="toSpvDeDetailList[4].deCondCode" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="01">满足过户收件收据</option><option value="02" selected="selected">出新产证</option><option value="03">物业结清</option><option value="04">其他</option></select>
+                                        </td>
+                                        <td class="text-left">
+                                        <select name="toSpvDeDetailList[4].payeeAccountType" value="CUSTOM_5" class="table-select" onchange="this.value" disabled=""><option value="">请选择</option><option value="SELLER">卖方(卖方账户)</option><option value="BUYER">买方(买方账户)</option><option value="FUND">搜易贷（北京）金融信息服务有限公司(资金方账户)</option><option value="CUSTOM_4">账号一(新添加)</option><option value="CUSTOM_5">账号二(新添加)</option><option value="CUSTOM_6">账号三(新添加)</option></select>
+                                        </td>
+                                        <td><input name="toSpvDeDetailList[4].deAmount" value="200.00" class="table-input-one" type="text" placeholder="请输入金额" readonly="">万元</td>
+                                        <td class="text-left"><input name="toSpvDeDetailList[4].deAddition" value="5" class="table-input" type="text" placeholder="" readonly=""></td>
+                                        <td align="center">
+
+                                    </td></tr>
+
+                                    <tr align="center">
+                                        <td class="text-left">
+                                        <input type="hidden" name="toSpvDeDetailList[5].pkid" value="825" readonly="">
+                                        <select ltype="select" id="toSpvDeDetailList[5].deCondCode" name="toSpvDeDetailList[5].deCondCode" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="01">满足过户收件收据</option><option value="02">出新产证</option><option value="03" selected="selected">物业结清</option><option value="04">其他</option></select>
+                                        </td>
+                                        <td class="text-left">
+                                        <select name="toSpvDeDetailList[5].payeeAccountType" value="CUSTOM_6" class="table-select" onchange="this.value" disabled=""><option value="">请选择</option><option value="SELLER">卖方(卖方账户)</option><option value="BUYER">买方(买方账户)</option><option value="FUND">搜易贷（北京）金融信息服务有限公司(资金方账户)</option><option value="CUSTOM_4">账号一(新添加)</option><option value="CUSTOM_5">账号二(新添加)</option><option value="CUSTOM_6">账号三(新添加)</option></select>
+                                        </td>
+                                        <td><input name="toSpvDeDetailList[5].deAmount" value="150.00" class="table-input-one" type="text" placeholder="请输入金额" readonly="">万元</td>
+                                        <td class="text-left"><input name="toSpvDeDetailList[5].deAddition" value="6" class="table-input" type="text" placeholder="" readonly=""></td>
+                                        <td align="center">
+
+                                    </td></tr>
+
+                                    <tr align="center">
+                                        <td class="text-left">
+                                        <input type="hidden" name="toSpvDeDetailList[6].pkid" value="826" readonly="">
+                                        <select ltype="select" id="toSpvDeDetailList[6].deCondCode" name="toSpvDeDetailList[6].deCondCode" class="form-control input-one" validate="" onchange="" ligerui="none" disabled=""><option value="01">满足过户收件收据</option><option value="02">出新产证</option><option value="03">物业结清</option><option value="04" selected="selected">其他</option></select>
+                                        </td>
+                                        <td class="text-left">
+                                        <select name="toSpvDeDetailList[6].payeeAccountType" value="BUYER" class="table-select" onchange="this.value" disabled=""><option value="">请选择</option><option value="SELLER">卖方(卖方账户)</option><option value="BUYER">买方(买方账户)</option><option value="FUND">搜易贷（北京）金融信息服务有限公司(资金方账户)</option><option value="CUSTOM_4">账号一(新添加)</option><option value="CUSTOM_5">账号二(新添加)</option><option value="CUSTOM_6">账号三(新添加)</option></select>
+                                        </td>
+                                        <td><input name="toSpvDeDetailList[6].deAmount" value="150.00" class="table-input-one" type="text" placeholder="请输入金额" readonly="">万元</td>
+                                        <td class="text-left"><input name="toSpvDeDetailList[6].deAddition" value="7" class="table-input" type="text" placeholder="" readonly=""></td>
+                                        <td align="center">
+
+                                    </td></tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="ibox-content" id="spvfour_info">
+                    <h5 style="font-size:14px;">上传备件</h5>
+                    <div class="ibox-content" id="spvthree_info">
+                    </div>
+                </div>
+                <div class="ibox-content" id="spvfive_info">
+                    <div class="stop-content">
+                        <div class="form-inline">
+                            <div class="title">"中止/结束"流程</div>
+                            <div class="form-row form-rowbot clear">
+                                <div class="form-group form-margin margin-host">
+                                    <label for="" class="">申请状态</label> <label class="radio-inline"> <input type="radio" name="mortClear" value="1" checked="checked" readonly="" disabled="">中止
+                                    </label>
+                                    <label class="radio-inline"> <input type="radio" name="mortClear" value="0" readonly="" disabled=""> 结束
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row form-rowbot" id="signDiv" style="">
+                                <div class="form-group form-margin form-space-one">
+                                    <label for="" class="lable-one">原因</label>
+                                    <input type="text" value="由于系统原因，暂无法更新" class="form-control space-host" placeholder="" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="host-content">
+                        <div class="form-inline">
+                            <div class="title">主办审核</div>
+                            <div class="form-row form-rowbot clear">
+                                <div class="form-group form-margin margin-host">
+                                    <label for="" class="">审核状态</label> <label class="radio-inline"> <input type="radio" name="mort" value="1" checked="checked" readonly="" disabled="">通过
+                                    </label>
+                                    <label class="radio-inline"> <input type="radio" name="mort" value="0" readonly="" disabled=""> 驳回
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row form-rowbot" id="signDiv" style="">
+                                <div class="form-group form-margin form-space-one">
+                                    <label for="" class="lable-one">驳回原因</label>
+                                    <input type="text" value="由于系统原因，暂无法更新" class="form-control space-host" placeholder="" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="host-content">
+                        <div class="form-inline">
+                            <div class="title">风控总监审核</div>
+                            <div class="form-row form-rowbot clear">
+                                <div class="form-group form-margin margin-host">
+                                    <label for="" class="">审核状态</label> <label class="radio-inline"> <input type="radio" name="ismortClear" value="1" checked="checked">通过
+                                    </label>
+                                    <label class="radio-inline"> <input type="radio" name="ismortClear" value="0" > 驳回
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row form-rowbot" id="signDiv" style="">
+                                <div class="form-group form-margin form-space-one">
+                                    <label for="" class="lable-one">驳回原因</label> <input type="text" value="" class="form-control space-host" placeholder="" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-btn text-center">
+                        <div>
+                            <a id="RiskOfficerSign" class="btn btn-success mr5">提交</a>
+                            <a onclick="rescCallbocak()" class="btn btn-default">取消审核</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- main End -->
+
+
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="../static/js/jquery-2.1.1.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../static/js/inspinia.js"></script>
+    <script src="../static/js/plugins/pace/pace.min.js"></script>
+
+    <!-- stickup plugin -->
+    <script src="../static/js/plugins/stickup/stickUp.js"></script>
+    <script src="../static/trans/js/spv/spvDetails.js"></script>
+
+    <script>
+        $(".buyinfo, .sellinfo, .pledgeinfo").hide();
+        $("#BuyRadio1").on("click",function() {
+            $(".buyinfo").show();
+        });
+        $("#BuyRadio2").on("click",function() {
+            $(".buyinfo").hide();
+        });
+        $("#SellRadio1").on("click",function() {
+            $(".sellinfo").show();
+        });
+        $("#SellRadio2").on("click",function() {
+            $(".sellinfo").hide();
+        });
+        $("#Pledge1").on("click",function() {
+            $(".pledgeinfo").show();
+        });
+        $("#Pledge2").on("click",function() {
+            $(".pledgeinfo").hide();
+        });
+    </script>
+<script>
+var sum=1; //定义sum为全局变量
+
+
+function getAtr(i){
+    $str='';
+    $str+="<tr align='center'>";
+    $str+="<td class='text-left'><select class='table-select'><option value=''>买方贷款审批完成</option></select></td>";
+    $str+="<td class='text-left'><select class='table-select'><option value=''>资金方</option><option value=''>卖方</option></select></td>";
+
+    $str+="<td><input class='table-input-one' type='text' placeholder='请输入金额'>元</td>";
+    $str+="<td class='text-left' ><input class='table-input' type='text' placeholder='' /></td>";
+    $str+="<td class='btn-height'><a href='javascript:void(0)'  onClick='getAtr(this)'>添加</a><a onClick='getDel(this)' class='grey' href='javascript:void(0)'>删除</a></td>";
+    $str+="</tr>";
+    $("#addTr").append($str);
+    sum ++;
+    $("#sum").html(sum);
+}
+function getDel(k){
+    $(k).parents('tr').remove();
+    sum --;
+    $("#sum").html(sum);
+}
+
+
+</script>
+
+
+</body>
+
+</html>

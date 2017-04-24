@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>
+            风控措施列表
+        </title>
+        <link href="../static/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../static/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+        <link href="../static/css/animate.css" rel="stylesheet"/>
+        <link href="../static/css/style.css" rel="stylesheet"/>
+        <!-- Data Tables -->
+        <link href="../static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet"/>
+        <link href="../static/css/plugins/dataTables/dataTables.responsive.css" rel="stylesheet"/>
+        <link href="../static/css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet"/>
+        <link href="../static/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+         <!-- index_css -->
+        <link rel="stylesheet" href="../static/trans/css/common/base.css" />
+        <link rel="stylesheet" href="../static/trans/css/common/table.css" />
+        <link rel="stylesheet" href="../static/trans/css/common/input.css" />
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css" ">
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span>
+                                <img alt="image" class="img-circle" src="../static/img/profile_small.jpg"/>
+                            </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">
+                                            金姣姣
+                                        </strong>
+                                    </span>
+                                    <span class="text-muted text-xs block">
+                                        交易顾问
+                                    </span>
+                                    <span class="text-muted text-xs block">
+                                        虹口杨浦贵宾服务部A组
+                                        <b class="caret">
+                                        </b>
+                                    </span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                    <a href="#">
+                                        我的信息
+                                    </a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" onClick="LogoutUtils.logout();return false;">
+                                        注销
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            YUCUI+
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="../workbench/dashboard.html">
+                            <i class="fa fa-home">
+                            </i>
+                            <span class="nav-label">
+                                个人工作台
+                            </span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fa fa-th-large">
+                            </i>
+                            <span class="nav-label">
+                                我的案件
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../workflow/myCaseList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    案件总览
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../workflow/caseDistribute.html">
+                                    <i class="fa ">
+                                    </i>
+                                    待分配案件
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../workflow/myTaskList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    待办任务
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../workflow/unlocatedTasks.html">
+                                    <i class="fa ">
+                                    </i>
+                                    无主任务
+                                </a>
+                            </li>
+                            <li>
+                                <a href="unlocatedCase.html">
+                                    <i class="fa ">
+                                    </i>
+                                    无主案件
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tracking.html">
+                                    <i class="fa ">
+                                    </i>
+                                    案件追踪
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="mortgageApproveLost.html">
+                                    <i class="fa ">
+                                    </i>
+                                    流失案件
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../workflow/toTaskOfGroupList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    本组待办列表
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <i class="fa fa-glass">
+                            </i>
+                            <span class="nav-label">
+                                E+贷款
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="../eloan/eloan_index.html">
+                                    <i class="fa ">
+                                    </i>
+                                    E+贷款主页列表
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../eloan/eloan_detail.html">
+                                    <i class="fa ">
+                                    </i>
+                                    E+贷款详情
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                佣金管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="../award/read.html">
+                                    <i class="fa ">
+                                    </i>
+                                    佣金查看
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../award/personBonus.html">
+                                    <i class="fa ">
+                                    </i>
+                                    我的计件奖金
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/baseAward.html">
+                                    <i class="fa ">
+                                    </i>
+                                    我的基础计件奖金
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/baseAwardReport.html">
+                                    <i class="fa ">
+                                    </i>
+                                    计件奖金报表
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/baseAwardReport.html">
+                                    <i class="fa ">
+                                    </i>
+                                    可计件奖金案件筛选
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <i class="fa fa-glass">
+                            </i>
+                            <span class="nav-label">
+                                资金监管
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../spv/spvCaseList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    监管合约列表
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/waterDetail.html">
+                                    <i class="fa ">
+                                    </i>
+                                    监管资金出入账流水
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-comment">
+                            </i>
+                            <span class="nav-label">
+                                产调结果
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../propertyresearch/processWaitList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    待处理产调
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/processingList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    已受理产调
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/successList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    已完成产调
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/resultGet.html">
+                                    <i class="fa ">
+                                    </i>
+                                    产调结果
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/sourceList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    产调来源清单
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                            <a href="#">
+                                <i class="fa fa-th-large">
+                                </i>
+                                <span class="nav-label">
+                                    报表
+                                </span>
+                                <span class="fa arrow">
+                                </span>
+                            </a>
+                            <ul class="nav nav-second-level collapse">
+                                <li class="">
+                                    <a href="../report/district.html">
+                                        <i class="fa ">
+                                        </i>
+                                        区域报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../workflow/caseDistribute.html">
+                                        <i class="fa ">
+                                        </i>
+                                        金融产品报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../workflow/myTaskList.html">
+                                        <i class="fa ">
+                                        </i>
+                                        评估费报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/satisfactionDegree.html">
+                                        <i class="fa ">
+                                        </i>
+                                        满意度
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../workflow/unlocatedTasks.html">
+                                        <i class="fa ">
+                                        </i>
+                                        贷款流失报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/gageInfo.html">
+                                        <i class="fa ">
+                                        </i>
+                                        临时银行案件列表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/sourceReport.html">
+                                        <i class="fa ">
+                                        </i>
+                                        产调来源报表
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tracking.html">
+                                        <i class="fa ">
+                                        </i>
+                                        案件工作量详情
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                贷款信息列表
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的贷款
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本组贷款
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本区贷款
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    贷款清单
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                临时银行模块
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本组临时银行申请
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本区临时银行申请
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    所有临时银行申请
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                贷款流失模块
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失单量分析
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失金额分析
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失区域分布分析
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失贵宾中心分析
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                资金监管合约管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    申请转合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    录入监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    保存监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    提交监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    检查交易异常
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本组监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本区监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    监管合约清单
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                入款/放款方案管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    增加放款方案
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    查看放款方案
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    变更放款方案
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    审批放款方案变更
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    检查放款方案变更
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                销售管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    评估费收取单转化率
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    评估费打折系数
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                工作质量管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    客户满意度导入
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    客户满意度查看
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    客户满意度汇总
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                业绩/奖金模块
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    可计件案件池查看
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    可计件案件池导出
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    计件基础奖金计算
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    计件基础奖金归集
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    计件奖金计算
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-calendar-o">
+                            </i>
+                            <span class="nav-label">
+                                知识管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    知识库
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的知识
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-user">
+                            </i>
+                            <span class="nav-label">
+                                个人设置
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的信息
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    授权代办
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            <div id="page-wrapper" class="gray-bg">
+                <div class="row border-bottom">
+                    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                        <div class="navbar-header">
+                            <a class="navbar-minimalize minimalize-styl-2 btn btn-warning " href="#">
+                                <i class="fa fa-bars">
+                                </i>
+                            </a>
+                        </div>
+                        <div class="navbar-header" style="margin-left: 30%;">
+                            <h2 class="welcome">
+                                欢迎使用誉萃交易平台！
+                            </h2>
+                            <iframe id="tmp_downloadhelper_iframe" style="display:none;">
+                            </iframe>
+                        </div>
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li>
+                                <span class="m-r-sm text-muted welcome-message">
+                                </span>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-envelope">
+                                    </i>
+                                    <span class="label label-warning" id="sp_badge">
+                                        766
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-messages" id="messageul">
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left">
+                                                <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                                    <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg"/>
+                                                </span>
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>
+                                                    跟进提醒
+                                                </strong>
+                                                <br/>
+                                                编号为ZY-NAJ-201607-0863，地址为上海杨浦区五角场街道国权路43号独栋号2411室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                                <br/>
+                                                <small class="text-muted">
+                                                    2016-07-22
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="divider">
+                                    </div>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left">
+                                                <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                                    <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg"/>
+                                                </span>
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>
+                                                    跟进提醒
+                                                </strong>
+                                                <br/>
+                                                编号为ZY-NAJ-201607-0866，地址为上海杨浦区五角场镇市京一村13号0502室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                                <br/>
+                                                <small class="text-muted">
+                                                    2016-07-22
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="divider">
+                                    </div>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left">
+                                                <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                                    <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg"/>
+                                                </span>
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>
+                                                    临时银行处理提醒
+                                                </strong>
+                                                <br/>
+                                                编号为ZY-AJ-201605-1527，地址为上海黄浦区西藏南路片区西藏南路1374弄21号0403室的案件临时银行已经处理. 临时银行为顾村公园支行(其他), 请及时跟进.
+                                                <br/>
+                                                <small class="text-muted">
+                                                    2016-07-22
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="divider">
+                                    </div>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left">
+                                                <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                                    <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg"/>
+                                                </span>
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>
+                                                    跟进提醒
+                                                </strong>
+                                                <br/>
+                                                编号为ZY-NAJ-201607-0862，地址为上海杨浦区五角场街道国权路43号独栋号2410室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                                <br/>
+                                                <small class="text-muted">
+                                                    2016-07-22
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="divider">
+                                    </div>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left">
+                                                <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                                    <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg"/>
+                                                </span>
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>
+                                                    跟进提醒
+                                                </strong>
+                                                <br/>
+                                                编号为ZY-NAJ-201607-0865，地址为上海杨浦区五角场镇浣纱六村(浣沙六村)31号0603室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                                <br/>
+                                                <small class="text-muted">
+                                                    2016-07-22
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="divider">
+                                    </div>
+                                    <li class="text-center link-block">
+                                        <div>
+                                        </div>
+                                        <a href="#" target="messageContent">
+                                            <i class="fa fa-envelope">
+                                            </i>
+                                            <strong>
+                                                去消息中心
+                                            </strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                    切换岗位
+                                </a>
+                                <ul class="dropdown-menu animated fadeInRight m-t-xs" id="portalOrgJob">
+                                    <li>
+                                        <a href="javascript:void(0);" onClick="orgJob.changeOrgJob(&quot;8dc9766035cc47819e7eb28ad2c16bc6&quot;,&quot;ff8080814f459a78014f45ab2c39000d&quot;)">
+                                            交易顾问@虹口杨浦贵宾服务部A组
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--*********************** HTML_main*********************** -->
+                <div class="wrapper wrapper-content animated fadeInRight">
+                    <div class="ibox-content border-bottom clearfix space_box">
+                        <h2 class="title">
+                            贷款流失筛选
+                        </h2>
+                        <form method="get" class="form_list">
+                            <div class="line">
+                                <div class="form_content">
+                                    <label class="control-label sign_left_small">
+                                        贷款合约编号
+                                    </label>
+                                    <input class="teamcode input_type" placeholder="请输入" value="" />
+                                </div>
+                                <div class="form_content">
+                                    <label class="control-label sign_left_small">
+                                        风控措施
+                                    </label>
+                                    <select class="select_control sign_right_one">
+                                        <option value="">
+                                            请选择
+                                        </option>
+                                        <option value="">
+                                            这里为文字内容测试
+                                        </option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="line">
+                                <div class="form_content">
+                                    <div class="sign_left pull-left" style="width: 105px;">
+                                        <select class="form-control">
+                                            <option value="1" selected="selected">
+                                                贷款专员
+                                            </option>
+                                            <option value="0">
+                                                执行人
+                                            </option>
+                                            <option value="2">
+                                                借款人
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="teamcode pull-left">
+                                        <input type="text" class="form-control pull-left">
+                                    </div>
+                                </div>
+                                <div class="form_content">
+                                    <label class="control-label sign_left_small select_style mend_select">
+                                        风控执行时间
+                                    </label>
+                                    <div class="input-group sign-right dataleft input-daterange" data-date-format="yyyy-mm-dd" >
+                                        <input name="" class="form-control data_style" type="text" value="" placeholder="起始日期"> <span class="input-group-addon">到</span>
+                                        <input  name="" class="form-control data_style" type="text" value="" placeholder="结束日期">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="line">
+
+                                <div class="form_content">
+                                    <label class="control-label sign_left_small">
+                                        贷款归属组
+                                    </label>
+                                    <input class="teamcode input_type" placeholder="请输入" value="" />
+                                    <div class="input-group float_icon organize_icon">
+                                        <i class="icon iconfont">&#xe61b;</i>
+                                    </div>
+                                </div>
+                                <div class="add_btn" style="float:left;margin-left:126px;">
+                                    <button type="button" class="btn btn-success">
+                                        <i class="icon iconfont">&#xe635;</i>
+                                        查询
+                                    </button>
+                                    <button type="button" class="btn btn-success">
+                                        导出列表
+                                    </button>
+                                    <button type="button" class="btn btn-grey">
+                                        清空
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table_content">
+                                <table class="table table_blue table-striped table-bordered table-hover " id="editable" >
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                贷款合约编号
+                                            </th>
+                                            <th>
+                                                产品类型
+                                            </th>
+                                            <th>
+                                                风控措施类型
+                                            </th>
+                                            <th>
+                                                借款人
+                                            </th>
+                                            <th>
+                                                贷款专员
+                                            </th>
+                                            <th>
+                                                风控执行
+                                            </th>
+                                            <th>
+                                                操作
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p class="big">
+                                                    <a href="javascript:;" class="no-underline">
+                                                        ZY-AJ-201605-0952
+                                                    </a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <i class="sign_blue">
+                                                        换房贷
+                                                    </i>
+                                                </p>
+                                                <p class="big">
+                                                    及时雨
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    押卡押证
+                                                </p>
+                                            </td>
+                                            <td class="center">
+                                                <span class="manager"><a href="#">金娇娇</a></span>
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    贷款专员： <a href="#" class="no-underline">许庆祺</a>
+                                                </p>
+                                                <p class="big">
+                                                    虹口杨浦贵宾服务部
+                                                </p>
+
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    执行人： <a href="#" class="no-underline">李晓茂</a>
+                                                </p>
+                                                <p class="smll_sign">
+                                                    <i class="sign_normal">执</i>
+                                                    2016-05-30
+                                                </p>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">操作
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" style="left:-95px;">
+                                                        <li><a href="#">编辑</a></li>
+                                                        <li><a href="#">查看</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="big">
+                                                    <a href="javascript:;" class="no-underline">
+                                                        ZY-AJ-201605-0952
+                                                    </a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <i class="sign_blue">
+                                                        换房贷
+                                                    </i>
+                                                </p>
+                                                <p class="big">
+                                                    及时雨
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    押卡押证
+                                                </p>
+                                            </td>
+                                            <td class="center">
+                                                <span class="manager"><a href="#">金娇娇</a></span>
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    贷款专员： <a href="#" class="no-underline">许庆祺</a>
+                                                </p>
+                                                <p class="big">
+                                                    虹口杨浦贵宾服务部
+                                                </p>
+
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    执行人： <a href="#" class="no-underline">李晓茂</a>
+                                                </p>
+                                                <p class="smll_sign">
+                                                    <i class="sign_normal">执</i>
+                                                    2016-05-30
+                                                </p>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">操作
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" style="left:-95px;">
+                                                        <li><a href="#">编辑</a></li>
+                                                        <li><a href="#">查看</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="big">
+                                                    <a href="javascript:;" class="no-underline">
+                                                        ZY-AJ-201605-0952
+                                                    </a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <i class="sign_blue">
+                                                        换房贷
+                                                    </i>
+                                                </p>
+                                                <p class="big">
+                                                    及时雨
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    押卡押证
+                                                </p>
+                                            </td>
+                                            <td class="center">
+                                                <span class="manager"><a href="#">金娇娇</a></span>
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    贷款专员： <a href="#" class="no-underline">许庆祺</a>
+                                                </p>
+                                                <p class="big">
+                                                    虹口杨浦贵宾服务部
+                                                </p>
+
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    执行人： <a href="#" class="no-underline">李晓茂</a>
+                                                </p>
+                                                <p class="smll_sign">
+                                                    <i class="sign_normal">执</i>
+                                                    2016-05-30
+                                                </p>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">操作
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" style="left:-95px;">
+                                                        <li><a href="#">编辑</a></li>
+                                                        <li><a href="#">查看</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="big">
+                                                    <a href="javascript:;" class="no-underline">
+                                                        ZY-AJ-201605-0952
+                                                    </a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <i class="sign_blue">
+                                                        换房贷
+                                                    </i>
+                                                </p>
+                                                <p class="big">
+                                                    及时雨
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    押卡押证
+                                                </p>
+                                            </td>
+                                            <td class="center">
+                                                <span class="manager"><a href="#">金娇娇</a></span>
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    贷款专员： <a href="#" class="no-underline">许庆祺</a>
+                                                </p>
+                                                <p class="big">
+                                                    虹口杨浦贵宾服务部
+                                                </p>
+
+                                            </td>
+                                            <td>
+                                                <p class="big">
+                                                    执行人： <a href="#" class="no-underline">李晓茂</a>
+                                                </p>
+                                                <p class="smll_sign">
+                                                    <i class="sign_normal">执</i>
+                                                    2016-05-30
+                                                </p>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">操作
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" style="left:-95px;">
+                                                        <li><a href="#">编辑</a></li>
+                                                        <li><a href="#">查看</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-center page_box">
+                                    <span id="currentTotalPage">
+                                        <strong>
+                                            1/8
+                                        </strong>
+                                    </span>
+                                    <span class="ml15">
+                                        共
+                                        <strong id="totalP">
+                                            144
+                                        </strong>
+                                        条
+                                    </span>
+                                    &nbsp;
+                                    <div id="pageBar" class="pagination text-center">
+                                        <ul class="pagination">
+                                            <li class="first disabled">
+                                                <a href="#"><i class="fa fa-step-backward"></i></a>
+                                            </li>
+                                            <li class="prev disabled">
+                                                <a href="#"><i class="fa fa-chevron-left"></i></a>
+                                            </li>
+                                            <li class="page active">
+                                                <a href="#">
+                                                    1
+                                                </a>
+                                            </li>
+                                            <li class="page">
+                                                <a href="#">
+                                                    2
+                                                </a>
+                                            </li>
+                                            <li class="page">
+                                                <a href="#">
+                                                    3
+                                                </a>
+                                            </li>
+                                            <li class="page">
+                                                <a href="#">
+                                                    4
+                                                </a>
+                                            </li>
+                                            <li class="page">
+                                                <a href="#">
+                                                    5
+                                                </a>
+                                            </li>
+                                            <li class="page">
+                                                <a href="#">
+                                                    6
+                                                </a>
+                                            </li>
+                                            <li class="page">
+                                                <a href="#">
+                                                    7
+                                                </a>
+                                            </li>
+                                            <li class="page">
+                                                <a href="#">
+                                                    8
+                                                </a>
+                                            </li>
+                                            <li class="next">
+                                                <a href="#"><i class="fa fa-chevron-right"></i></a>
+                                            </li>
+                                            <li class="last">
+                                                <a href="#"><i class="fa fa-step-forward"></i></a>
+                                            </li>
+                                        </ul>
+                                        <div class="pagergoto">
+                                            <span class="go_text">
+                                                跳转至
+                                            </span>
+                                            <span>
+                                            <input type="text" class="go_input" value="">
+                                            <input type="button" class="go_btn" value="GO"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--*********************** HTML_main*********************** -->
+            </div>
+        </div>
+<style>
+    .add {
+        border: 1px solid red;
+    }
+</style>
+        <!-- Mainly scripts -->
+        <script src="../static/js/jquery-2.1.1.js">
+        </script>
+        <script src="../static/js/bootstrap.min.js">
+        </script>
+        <script src="../static/js/plugins/metisMenu/jquery.metisMenu.js">
+        </script>
+        <script src="../static/js/plugins/slimscroll/jquery.slimscroll.min.js">
+        </script>
+        <!-- Custom and plugin javascript -->
+        <script src="../static/js/inspinia.js">
+        </script>
+        <script src="../static/js/plugins/pace/pace.min.js">
+        </script>
+
+
+        <script src="../static/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                $('.input-daterange').datepicker({
+                    keyboardNavigation: false,
+                    forceParse: false,
+                    autoclose: true
+                });
+            });
+        </script>
+
+    </body>
+</html>

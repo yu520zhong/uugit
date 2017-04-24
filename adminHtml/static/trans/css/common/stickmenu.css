@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/*
+ *
+ *   AIST - Mobile style for YC
+ *   version 2.0
+ *
+*/
+body {
+  font-family: "Microsoft Yahei";
+}
+
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 80px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px;
+    font-weight: bold;
+    color: #999c9e;
+  }
+
+  .dl-horizontal dd {
+    margin-left: 85px;
+    padding: 5px;
+  }
+}
+/*for stickup nav-bar*/
+.stickup-nav-bar {
+  padding: 0;
+  background: #52cdec;
+  z-index: 1500;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.wrapper-content {
+  padding: 5px 15px 40px;
+}
+
+.stickup-nav-bar .navbar-nav a {
+  color: #fff;
+}
+
+.stickup-nav-bar .navbar-nav a:hover {
+  color: #f9f9f9;
+  background: #f8ac59;
+  border-color: white;
+}
+
+.stickup-nav-bar .navbar-nav .active > a, .stickup-nav-bar .navbar-nav > .active > a:focus {
+  background: #f8ac59;
+  font-weight: 700;
+}
+
+.stickup-nav-bar .navbar-nav .active > a:hover {
+  background: #f8ac59;
+  color: #fff;
+  font-weight: 700;
+}
+
+.stickup-nav-bar .navbar-nav > li.active {
+  /*border-left: 4px solid #19aa8d;*/
+  border-left: 0px;
+  /*background: #293846;*/
+}
+
+.wrapper-content .ibox-content {
+  padding: 20px 15px 10px 15px;
+  margin-top: 10px;
+}
+
+.wrapper-content .ibox-content .row {
+  background-color: inherit;
+  margin-top: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.wrapper-content .ibox-content .left-align-row {
+  margin-left: 5px;
+}
+
+.wrapper-content .ibox-content .panel-body {
+  padding: 15px;
+}
+
+/*文件查看面板*/
+.wrapper-content .file-board .file-list a {
+  padding: 0px  20px 20px 20px;
+  color: inherit;
+  line-height: 25px;
+}
+
+.contract-icon-block {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  font-size: 16px;
+  text-align: center;
+  float: left;
+  margin-right: 10px;
+}
+
+.timeline-qz-icon {
+  background: url(../img/yc-icon/bljd－qz@x2.png) no-repeat top;
+  background-size: cover;
+  border-radius: 0;
+  border: 0px solid #52cdec;
+}
+
+.timeline-aj-icon {
+  background: url(../img/yc-icon/bljd－按揭@x2.png) no-repeat top;
+  background-size: cover;
+  border-radius: 0;
+  border: 0px solid #52cdec;
+}
+
+.timeline-ej-icon {
+  background: url(../img/yc-icon/bljd－e+@x2.png) no-repeat top;
+  background-size: cover;
+  border-radius: 0;
+  border: 0px solid #52cdec;
+}
+
+.timeline-jg-icon {
+  background: url(../img/yc-icon/bljd－资金监管@x3.png) no-repeat top;
+  background-size: cover;
+  border-radius: 0;
+  border: 0px solid #52cdec;
+}
+
+/*zhenglei css for fs START*/
+.hr-line-fs {
+  border-top: 1px dashed #000000;
+  color: #000000;
+  background-color: #ffffff;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.yc-form .control-label {
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.yc-form .control-h {
+  color: #008080;
+}
+
+.yc-form .hr-line-dashed {
+  margin: 30px 0;
+}
+
+.m-b .yc-mb {
+  padding-bottom: 4px;
+}
+
+/*zhenglei css for fs END*/
+.btn-group > .btn.active {
+  background-color: #f8ac59;
+}
+
+.chat-discussion .chat-cust.chat-message .message-avatar {
+  float: left;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+.chat-discussion .chat-cust.chat-message .message {
+  text-align: left;
+  margin-right: 55px;
+  margin-left: 55px;
+  width: auto;
+  background-color: #5bc0de;
+  color: black;
+}
+
+.chat-discussion .chat-cust.chat-message .message-date {
+  float: right;
+}
+
+.chat-discussion .chat-yc.chat-message .message-avatar {
+  float: right;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.chat-discussion .chat-yc.chat-message .message {
+  text-align: right;
+  margin-right: 55px;
+  margin-left: 55px;
+  color: black;
+}
+
+.chat-discussion .chat-yc.chat-message .message-date {
+  float: left;
+}
+
+.chat-discussion .chat-message .message a {
+  color: #23527c;
+  font-weight: bold;
+}

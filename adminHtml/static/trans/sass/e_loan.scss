@@ -1,0 +1,81 @@
+@charset "utf-8";
+#base_info, .main_titile h5 {
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.main_titile {
+    .btn {
+        margin-left: 8px;
+    }
+}
+.case_row {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    overflow: hidden;
+}
+.wrapper-content .ibox-content {
+    padding: 10px 20px 18px 20px;
+    margin-top: 10px;
+}
+.ibox-content {
+    overflow: hidden;
+}
+.case_lump {
+    float: left;
+    margin: 7px 32px 7px 0px;
+}
+.case_lump {
+    p {
+        margin:0;
+        line-height: 24px;
+
+    }
+    span {
+        display: inline-block;
+        color: #333;
+        font-weight: bold;
+    }
+    em {
+        display: inline-block;
+        width: 110px;
+        margin-right: 20px;
+        color: #808080;
+        font-style: normal;
+        text-align: right;
+    }
+    .span_one {
+        width: 170px;
+    }
+    .span_two {
+        width: 340px;
+    }
+    .blue_color {
+        color: #428fcc;
+    }
+}
+.form_lump {
+    padding-left: 0px;
+}
+.form_lump li {
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+}
+.form_content {
+    position: relative;
+    margin-right: 35px!important;
+}
+.date_icon {
+    position:absolute;
+    top: 7px;
+    right: 10px;
+}
+.danwei {
+    color: #666;
+}
+.case_content {
+    display: none;
+}

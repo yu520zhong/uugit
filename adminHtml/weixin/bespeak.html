@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/autocompleter.css" />
+    <link rel="stylesheet" type="text/css" href="css/validate.css" />
+
+</head>
+<body >
+    <header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left aui-btn" onClick="javascript :history.back(-1);">
+            <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">预约取号</div>
+    </header>
+    <form action="" id="form1" class="form-con">
+        <div class="aui-padded-l-10 aui-padded-r-10 pt15 pb5">
+            <div class="aui-info-item">
+               <i class="iconfont blue mr5">&#xe605;</i>13:00-15:00
+               <span class="color80 ml5" > 2016-09-16</span>
+                </div>
+        </div>
+        <div class="aui-row pad10">
+                <div class="aui-col-xs-3 linehgl30">
+                    办理事项
+                </div>
+                <div class="aui-col-xs-9 add-select">
+                    <div class="choiceoption">
+                          <input type="button" id="choices1"  class="aui-border-btn choices" name="choices" value="签合同" data-required="true" data-descriptions="choices" />
+                        <!--<i class="iconfont right-mark">&#xe607;</i>-->
+                    </div>
+                    <div class="choiceoption">
+                        <input type="button" id="choices2" class="aui-border-btn right-mark choices" name="choices" value="办贷款" data-required="true" data-descriptions="choices" />
+                    </div>
+                    <div class="choiceoption">
+                        <input type="button" id="choices3" class="aui-border-btn choices" name="choices" value="e+贷款" data-required="true" data-descriptions="choices" />
+                    </div>
+                    <div class="choiceoption">
+                        <input type="button" id="choices4" class="aui-border-btn choices" name="choices" value="开例会" data-required="true" data-descriptions="choices" />
+                    </div>
+                </div>
+            </div>
+        <div class="aui-content  margin10 border_grey radius3 linehgl30 relative item">
+            <input type="text" id="input" placeholder="交易单地址" class="excend10 font-small" data-required="true" data-descriptions="address">
+            <i class="dingwei iconfont orange">&#xe60a;</i>
+        </div>
+        <section class="aui-content">
+             <div class="aui-row pad10 clearfix overvisible item">
+                <div class="aui-col-xs-3 linehgl30">
+                    服务专员
+                </div>
+                <div class="aui-col-xs-5">
+                    <input type="text" id="member" placeholder="fdfdfdf" class="border_grey input30 radius3 font-small" data-required="true" value="">
+                </div>
+            </div>
+
+            <div class="aui-row pad10">
+                <div class="">
+                    备注信息：
+                </div>
+                <div class="textarea">
+                    <textarea name="" id="" cols="30" rows="3" class="" placeholder="如有其他特殊要求可填入此栏" ></textarea>
+                </div>
+            </div>
+            <div class="plr30 mt15"><input type="submit" class="aui-btn aui-btn-info aui-btn-block aui-btn-user" value="领取预约号"></div>
+        </section>
+    </form>
+</body>
+
+<script type="text/javascript" src="script/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="script/api.js"></script>
+<script type="text/javascript" src="script/aui-dialog.js"></script>
+<script type="text/javascript" src="script/aui-main.js"></script>
+<script type="text/javascript" src="script/layer.js"></script>
+<script type="text/javascript" src="script/jquery.autocompleter.js"></script>
+<script type="text/javascript" src="script/autocompleter.js"></script>
+<script type="text/javascript" src="script/bespeak.js"></script>
+<script type="text/javascript" src="script/jquery-mvalidate.js"></script>
+
+
+<script>
+    $(function(){
+        $.mvalidateExtend({
+            phone:{
+                required : true,
+                pattern : /^120$|^((1[0-1]|[1-9])?\d)$/,
+                each:function(){
+                },
+                descriptions:{
+                    required : '<div class="field-invalidmsg">请输入参与人数</div>',
+                    pattern : '<div class="field-invalidmsg">领取失败，暂无20人以上的签约室</div>',
+                    valid : '<div class="field-validmsg">正确</div>'
+                }
+            }
+        });
+
+
+
+        $("#form1").mvalidate({
+            type:1,
+            onKeyup:true,
+            sendForm:true,
+            firstInvalidFocus:false,
+            valid:function(event,options){
+                //点击提交按钮时,表单通过验证触发函数
+                myOpen();
+                event.preventDefault();
+            },
+            descriptions:{
+                address:{
+                    required : '请输入交易单地址'
+                },
+                choices:{
+                    required : '请选择办理事项'
+                },
+            }
+        });
+
+    })
+
+    function myOpen(){
+        layer.open({
+            type: 0,
+            title: '',
+            shadeClose: false,
+            content: '<div class="dialog-user">'+
+                        '<i class="iconfont iconfont70 mt20 cyan">&#xe606;</i>'
+                        + '<h2 class="dialog-head mt20 font18">恭喜你预约成功</h2>'
+                        + '<div class="dialog-info">'
+                        + '<p class="font18 mt20">编码: <span class="yellow ">A-FJ234s448</span></p>'
+                        + '<p class="mt5 font12">时间：2016-08-12&nbsp;&nbsp;10:00-12:00</p></div>'
+                        + '<div class="btn-box mt20">'
+                        + '<a href="myorder.html"><div class="aui-btn aui-btn-primary aui-btn-big">确定</div></a>'
+                        + '</div>'
+        });
+    };
+
+
+</script>
+</html>

@@ -1,0 +1,11 @@
+.sign_visited {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    padding: 1px 10px;
+    margin-top: 2px;
+    margin-right: 5px;
+    border-radius: 3px;
+    background-color: #ccc;
+}

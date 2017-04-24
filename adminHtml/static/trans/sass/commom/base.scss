@@ -1,0 +1,56 @@
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Microsoft Yahei";
+}
+button, input, select, textarea {
+  font-family: "Microsoft Yahei";
+}
+.wrapper-content {
+	padding: 20px 0px 40px;
+}
+.nav > li.active {
+    border-left: 0px;
+}
+.welcome, .table, .panel-heading, .nav-tabs li a  {
+	font-family: "Microsoft Yahei";
+}
+.title {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+}
+.space_box {
+	margin-bottom: 15px;
+}
+.add_btn .btn {
+    vertical-align: middle;
+    background: url(../img/search.png) no-repeat 10px center;
+    height: 34px;
+    padding-left: 38px;
+    padding-right: 8px;
+    font-size: 14px;
+}
+.add_btn .btn_blue {
+    background-color:#428fcc;
+    color: #fff;
+}
+.add_btn .btn_blue:hover {
+    background-color:#3182c2;
+    color: #fff;
+}
+
+/* 矢量图标 */
+.icon_search {
+    font-size: 22px;
+    height: 34px;
+}
+.icon_revise {
+    font-size: 32px;
+    color: #428fcc;
+}
+.icon_light {
+    font-size: 24px;
+}
+
+
+
+

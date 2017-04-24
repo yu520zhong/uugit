@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>我的工作台</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../static/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css" rel="stylesheet">
+
+    <!-- stickUp fixed css -->
+    <link rel="stylesheet" href="../static/css/plugins/stickup/stickup.css">
+    <link rel="stylesheet" href="../static/trans/css/common/stickDash.css">
+
+    <link rel="stylesheet" href="../static/css/plugins/aist-steps/steps.css">
+    <link rel="stylesheet" href="../static/css/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css" ">
+
+
+    <!-- index_css  -->
+    <link rel="stylesheet" href="../static/trans/css/workbench/dashboard.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span>
+                                <img alt="image" class="img-circle" src="../static/img/profile_small.jpg"/>
+                            </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">
+                                            金姣姣
+                                        </strong>
+                                    </span>
+                                    <span class="text-muted text-xs block">
+                                        交易顾问
+                                    </span>
+                                    <span class="text-muted text-xs block">
+                                        虹口杨浦贵宾服务部A组
+                                        <b class="caret">
+                                        </b>
+                                    </span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                    <a href="#">
+                                        我的信息
+                                    </a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" onClick="LogoutUtils.logout();return false;">
+                                        注销
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            YUCUI+
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="../workbench/dashboard.html">
+                            <i class="fa fa-home">
+                            </i>
+                            <span class="nav-label">
+                                个人工作台
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-th-large">
+                            </i>
+                            <span class="nav-label">
+                                我的案件
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="active">
+                                <a href="../workflow/myCaseList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    案件总览
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../workflow/caseDistribute.html">
+                                    <i class="fa ">
+                                    </i>
+                                    待分配案件
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../workflow/myTaskList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    待办任务
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../workflow/unlocatedTasks.html">
+                                    <i class="fa ">
+                                    </i>
+                                    无主任务
+                                </a>
+                            </li>
+                            <li>
+                                <a href="unlocatedCase.html">
+                                    <i class="fa ">
+                                    </i>
+                                    无主案件
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tracking.html">
+                                    <i class="fa ">
+                                    </i>
+                                    案件追踪
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mortgageApproveLost.html">
+                                    <i class="fa ">
+                                    </i>
+                                    流失案件
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../workflow/toTaskOfGroupList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    本组待办列表
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <i class="fa fa-glass">
+                            </i>
+                            <span class="nav-label">
+                                E+贷款
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="../eloan/eloan_index.html">
+                                    <i class="fa ">
+                                    </i>
+                                    E+贷款主页列表
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../eloan/eloan_detail.html">
+                                    <i class="fa ">
+                                    </i>
+                                    E+贷款详情
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                佣金管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="../award/read.html">
+                                    <i class="fa ">
+                                    </i>
+                                    佣金查看
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../award/personBonus.html">
+                                    <i class="fa ">
+                                    </i>
+                                    我的计件奖金
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/baseAward.html">
+                                    <i class="fa ">
+                                    </i>
+                                    我的基础计件奖金
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/baseAwardReport.html">
+                                    <i class="fa ">
+                                    </i>
+                                    计件奖金报表
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../award/baseAwardReport.html">
+                                    <i class="fa ">
+                                    </i>
+                                    可计件奖金案件筛选
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <i class="fa fa-glass">
+                            </i>
+                            <span class="nav-label">
+                                资金监管
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../spv/spvCaseList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    监管合约列表
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../spv/waterDetail.html">
+                                    <i class="fa ">
+                                    </i>
+                                    监管资金出入账流水
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-comment">
+                            </i>
+                            <span class="nav-label">
+                                产调结果
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../propertyresearch/processWaitList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    待处理产调
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/processingList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    已受理产调
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/successList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    已完成产调
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../propertyresearch/resultGet.html">
+                                    <i class="fa ">
+                                    </i>
+                                    产调结果
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-comment">
+                            </i>
+                            <span class="nav-label">
+                                资金监管
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li class="">
+                                <a href="../spv/spvCaseList.html">
+                                    <i class="fa ">
+                                    </i>
+                                    资金监管案件列表
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="">
+                            <a href="#">
+                                <i class="fa fa-th-large">
+                                </i>
+                                <span class="nav-label">
+                                    报表
+                                </span>
+                                <span class="fa arrow">
+                                </span>
+                            </a>
+                            <ul class="nav nav-second-level collapse">
+                                <li class="">
+                                    <a href="../report/district.html">
+                                        <i class="fa ">
+                                        </i>
+                                        区域报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../workflow/caseDistribute.html">
+                                        <i class="fa ">
+                                        </i>
+                                        金融产品报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../workflow/myTaskList.html">
+                                        <i class="fa ">
+                                        </i>
+                                        评估费报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/satisfactionDegree.html">
+                                        <i class="fa ">
+                                        </i>
+                                        满意度
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../workflow/unlocatedTasks.html">
+                                        <i class="fa ">
+                                        </i>
+                                        贷款流失报表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/gageInfo.html">
+                                        <i class="fa ">
+                                        </i>
+                                        临时银行案件列表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/sourceReport.html">
+                                        <i class="fa ">
+                                        </i>
+                                        产调来源报表
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tracking.html">
+                                        <i class="fa ">
+                                        </i>
+                                        案件工作量详情
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="../report/dagre-d3.html">
+                                        <i class="fa ">
+                                        </i>
+                                        流程图
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                贷款信息列表
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的贷款
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本组贷款
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本区贷款
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    贷款清单
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                临时银行模块
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本组临时银行申请
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本区临时银行申请
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    所有临时银行申请
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                贷款流失模块
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失单量分析
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失金额分析
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失区域分布分析
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    流失贵宾中心分析
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                资金监管合约管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    申请转合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    录入监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    保存监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    提交监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    检查交易异常
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本组监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    本区监管合约
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    监管合约清单
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                入款/放款方案管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    增加放款方案
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    查看放款方案
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    变更放款方案
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    审批放款方案变更
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    检查放款方案变更
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                销售管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    评估费收取单转化率
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    评估费打折系数
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                工作质量管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    客户满意度导入
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    客户满意度查看
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    客户满意度汇总
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-cny">
+                            </i>
+                            <span class="nav-label">
+                                业绩/奖金模块
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    可计件案件池查看
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    可计件案件池导出
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    计件基础奖金计算
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    计件基础奖金归集
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    计件奖金计算
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-calendar-o">
+                            </i>
+                            <span class="nav-label">
+                                知识管理
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    知识库
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的知识
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-user">
+                            </i>
+                            <span class="nav-label">
+                                个人设置
+                            </span>
+                            <span class="fa arrow">
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    我的信息
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa ">
+                                    </i>
+                                    授权代办
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-warning " href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <div class="navbar-header" style="margin-left: 30%;"><h2 class="welcome">欢迎使用誉萃交易平台！</h2><iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <span class="m-r-sm text-muted welcome-message">    </span>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope"></i>  <span class="label label-warning" id="sp_badge">766</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages" id="messageul">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            跟进提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-NAJ-201607-0863，地址为上海杨浦区五角场街道国权路43号独栋号2411室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            跟进提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-NAJ-201607-0866，地址为上海杨浦区五角场镇市京一村13号0502室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            临时银行处理提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-AJ-201605-1527，地址为上海黄浦区西藏南路片区西藏南路1374弄21号0403室的案件临时银行已经处理. 临时银行为顾村公园支行(其他),
+                                        请及时跟进.
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            跟进提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-NAJ-201607-0862，地址为上海杨浦区五角场街道国权路43号独栋号2410室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="pull-left">
+                                        <span class="shead" style="background-image: url(&quot;http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg&quot;);">
+                                            <img class="img-circle himg" src="http://img.sh.centanet.com/shanghai/staticfile/agent/agentphoto/A1820.jpg">
+                                        </span>
+                                    </a>
+                                    <div class="media-body">
+                                        <strong>
+                                            跟进提醒
+                                        </strong>
+                                        <br>
+                                        编号为ZY-NAJ-201607-0865，地址为上海杨浦区五角场镇浣纱六村(浣沙六村)31号0603室的案件需要您立即跟进！经纪人”杨先芝“电话为（15800504374）
+                                        <br>
+                                        <small class="text-muted">
+                                            2016-07-22
+                                        </small>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="divider">
+                            </div>
+                            <li class="text-center link-block">
+                                <div>
+                                </div>
+                                <a href="http://trade.centaline.com:8083/trade-web/message/box/siteList.html"
+                                target="messageContent">
+                                    <i class="fa fa-envelope">
+                                    </i>
+                                    <strong>
+                                        去消息中心
+                                    </strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        切换岗位
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs" id="portalOrgJob">
+                    <li><a href="javascript:void(0);" onclick="orgJob.changeOrgJob(&quot;8dc9766035cc47819e7eb28ad2c16bc6&quot;,&quot;ff8080814f459a78014f45ab2c39000d&quot;)">交易顾问@虹口杨浦贵宾服务部A组</a></li></ul>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+            <!-- main Start -->
+            <div class="row wrapper border-bottom white-bg page-heading stickup-nav-bar">
+               <ul class="nav navbar-nav">
+                    <li class="menuItem active"><a href="#base_info">基本信息</a></li>
+                    <li class="menuItem"><a href="#zj_info">资金流水</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="wrapper wrapper-content animated fadeInUp">
+                    <!-- <div class="ibox"> -->
+                        <div class="ibox-content" id="base_info">
+
+                            <div class="row" style="position: relative;">
+                                <h5 class="main_titile" style="position:absolute;top:0;
+                                left:25px;font-size: 14px;">半年案件分布统计</h5>
+                                <div class="col-md-8">
+
+                                    <div id="main" style="width:100%;height:250px;"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="light_info">
+                                        <li class="light pass">
+                                            <a href="#">
+                                                <i class="icon iconfont pink martop20">&#xe631;</i>
+                                                <p class="line">红灯任务<br/><span>12</span></p>
+                                            </a>
+                                        </li>
+                                        <li class="light pass">
+
+                                            <a href="#">
+                                                <i class="icon iconfont yellow martop20">&#xe632;</i>
+                                                <p class="line">黄灯任务<br/><span>345</span></p>
+                                            </a>
+                                        </li>
+                                        <li class="pass">
+                                            <i class="icon iconfont green">&#xe633;</i>
+                                            <p>计划变更</p>
+                                        </li>
+                                        <li class="light pass">
+                                            <a href="#">
+                                                <i class="icon iconfont pink martop20">&#xe630;</i>
+                                                <p class="line">贷款流失<br/><span>6</span></p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="icon iconfont grey">&#xe639;</i>
+                                            <p>e+转化</p>
+                                        </li>
+                                        <li>
+                                            <i class="icon iconfont grey">&#xe634;</i>
+                                            <p>监管渗透</p>
+                                        </li>
+                                        <li>
+                                            <i class="icon iconfont grey">&#xe636;</i>
+                                            <p>无主案件</p>
+                                        </li>
+                                        <li>
+                                            <i class="icon iconfont grey">&#xe637;</i>
+                                            <p>无主任务</p>
+                                        </li>
+                                        <li>
+                                            <i class="icon iconfont grey">&#xe638;</i>
+                                            <p>无主资源</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                         <div class="ibox-content" id="zj_info">
+                            <div class="row m-t-sm" id="">
+                                <div class="col-lg-12">
+                                    <div class="panel blank-panel">
+                                        <div class="panel-heading">
+                                            <div class="panel-options">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active">
+                                                        <a href="#tab-1" data-toggle="tab">交易顾问工作数据显示</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#tab-2" data-toggle="tab">贷款详情</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#tab-3" data-toggle="tab">E＋贷款</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#tab-4" data-toggle="tab">业务提醒</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#tab-5" data-toggle="tab">龙虎榜</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab-1">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <img src="../static/img/img8.png" alt="" style="margin-top:-10px;width:100%">
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                        <select class="form-control m-b" id="sUserId">
+                                                            <option value="">默认</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-md-2" style="padding-left:0">
+                                                        <button class="btn btn-warning " type="button" id="btn_sta"><i class="fa fa-search"></i> <span class="bold">搜索</span>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="data-progress-wrap">
+                                                        <div class="data-progress data1">
+                                                            <div class="data-left">
+                                                                <span class="left-label h50 pt10">E+申请金额</span>
+                                                                <div class="data-bar">
+                                                                    <div class="progress progress-small">
+                                                                        <div style="width: 100%;" class="progress-bar bar-yellow"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="right-label pt10">134000万</span>
+                                                            </div>
+                                                            <div class="data-left">
+                                                                <span class="left-label">E+面签金额</span>
+                                                                <div class="data-bar">
+                                                                    <div class="progress progress-small">
+                                                                        <div style="width: 80%;" class="progress-bar bar-yellow"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="right-label">2000万</span>
+                                                            </div>
+                                                            <div class="data-left">
+                                                                <span class="left-label">E+放款金额</span>
+                                                                <div class="data-bar">
+                                                                    <div class="progress progress-small">
+                                                                        <div style="width: 56%;" class="progress-bar bar-yellow"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="right-label">2000万</span>
+                                                            </div>
+                                                            <div class="data-left">
+                                                                <span class="left-label h50 pb10">E+转换率</span>
+                                                                <div class="data-bar">
+                                                                    <div class="progress progress-small">
+                                                                        <div style="width: 30%;" class="progress-bar bar-yellow"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="right-label pb10">62%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data-progress data2">
+                                                            <p><span>评估费</span><em>38万</em></p>
+                                                            <p><span>评估费转换率</span><em>53%</em></p>
+                                                            <p><span>评估费折扣率</span><em>10%</em></p>
+
+                                                        </div>
+                                                        <div class="data-progress data3">
+                                                            <div class="data-left">
+                                                                <span class="left-label h50 pt10">接单数</span>
+                                                                <div class="data-bar">
+                                                                    <div class="progress progress-small">
+                                                                        <div style="width: 100%;" class="progress-bar bar-blue"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="right-label pt10">43单</span>
+                                                            </div>
+                                                            <div class="data-left">
+                                                                <span class="left-label ">签约数</span>
+                                                                <div class="data-bar">
+                                                                    <div class="progress progress-small">
+                                                                        <div style="width: 100%;" class="progress-bar bar-blue"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="right-label">134000单</span>
+                                                            </div>
+                                                            <div class="data-left">
+                                                                <span class="left-label ">贷款申请数</span>
+                                                                <div class="data-bar">
+                                                                    <div class="progress progress-small">
+                                                                        <div style="width: 56%;" class="progress-bar bar-blue"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="right-label">13单</span>
+                                                            </div>
+                                                            <div class="data-left">
+                                                                <span class="left-label  h50 pb10">结案数</span>
+                                                                <div class="data-bar">
+                                                                    <div class="progress progress-small">
+                                                                        <div style="width: 30%;" class="progress-bar bar-blue"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="right-label pb10">23单</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-2">
+                                                   <table class="table table-striped table-bordered table-hover dataTables-example dataTable dtr-inline">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    业务类型
+                                                                </th>
+                                                                <th>
+                                                                    申请
+                                                                </th>
+                                                                <th>
+                                                                    面签
+
+                                                                </th>
+                                                                <th>
+                                                                    放贷
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>首付贷款</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>消费贷款</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>抵押贷款</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>赎楼贷款</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>首付贷（抵押类）</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>税费卡</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>换房贷款</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>委托贷款</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>全款贷款</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>佣金卡</td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>99.99%</strong></span>
+                                                                </td>
+                                                                <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>20%</strong></span>
+                                                                </td>
+                                                                 <td class="span_sign">
+                                                                    <span>金额：<strong>9999万</strong></span>
+                                                                    <span>单数：<strong>99</strong></span>
+                                                                    <span>转化率：<strong>30%</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="tab-pane" id="tab-3">
+                                                    <img width="100%" src="../static/img/img03.jpg" alt="">
+
+                                                </div>
+
+
+                                                <div class="tab-pane" id="tab-4">
+                                                     <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="widget-box">
+                                                                <div class="widget-header widget-header-flat">
+                                                                    <h4 class="smaller">反馈提醒</h4>
+                                                                    <div class="widget-toolbar">
+                                                                        <label>
+                                                                           <span class="label label-blue">0</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="widget-body">
+                                                                    <div class="widget-main">
+                                                                        <img src="../static/img/no_idea.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="widget-box">
+                                                                <div class="widget-header widget-header-flat">
+                                                                    <h4 class="smaller">作业提醒</h4>
+                                                                    <div class="widget-toolbar">
+                                                                        <label>
+                                                                           <span class="label label-blue">1</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="widget-body">
+                                                                    <div class="widget-main">
+                                                                        <img src="../static/img/no_idea.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="widget-box">
+                                                                <div class="widget-header widget-header-flat">
+                                                                    <h4 class="smaller">止损提醒</h4>
+                                                                    <div class="widget-toolbar">
+                                                                        <label>
+                                                                           <span class="label label-blue">2</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="widget-body">
+                                                                    <div class="widget-main">
+                                                                        <img src="../static/img/no_idea.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                     </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-5">
+                                                    <div class="row dragon">
+                                                        <div class="col-md-6">
+                                                            <div class="panel panel-danger">
+                                                                <div class="panel-heading">E+金融申请榜</div>
+                                                                <div class="panel-body">
+                                                                    <div class="feed-activity-list">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="panel panel-warning">
+                                                                <div class="panel-heading">E+金融签约榜</div>
+                                                                <div class="panel-body">
+                                                                    <div class="feed-activity-list">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="panel panel-info">
+                                                                <div class="panel-heading">E+金融放款榜</div>
+                                                                <div class="panel-body">
+                                                                    <div class="feed-activity-list">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- main End -->
+
+
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="../static/js/jquery-2.1.1.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- ECharts.js -->
+    <script src="../static/js/echarts.min.js"></script>
+
+
+
+    <!-- Custom and plugin javascript -->
+    <script src="../static/js/inspinia.js"></script>
+    <script src="../static/js/plugins/pace/pace.min.js"></script>
+
+    <!-- stickup plugin -->
+    <script src="../static/js/plugins/stickup/stickUp.js"></script>
+    <script src="../static/trans/js/workbench/stickDash.js"></script>
+
+    <!-- Toastr script -->
+    <script src="../static/js/plugins/toastr/toastr.min.js"></script>
+    <script src="../static/js/morris/morris.js"></script>
+    <script src="../static/js/morris/raphael-min.js"></script>
+
+    <!-- index_js -->
+    <script src="../static/trans/js/workbench/morrisDash.js"></script>
+
+    <script>
+        $.fn.autotype = function(){
+            var $pass = $(this);
+            $pass.hover(function() {
+                $(this).css("background","#52cdec");
+                $(this).find("*").addClass('white');
+            },function() {
+                $(this).css("background","#edfcfd");
+                $(this).find("*").removeClass('white');
+            })
+        }
+        $(".pass").autotype();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.tab_box {
+    clear: both;
+}
+
+.tab_menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.tab_menu ul li {
+    display: inline;
+    border-right: 2px solid #eee;
+    padding: 0 15px;
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+    cursor: pointer;
+    color: #808080;
+}
+
+.tab_menu ul li:first-child {
+    padding-left: 0;
+}
+
+.tab_menu ul li:last-child {
+    border-right: 0 none;
+}
+
+.cover {
+    display: none;
+}
+
+.tab-selected {
+    font-weight: bold;
+    color: #1c84c6!important;
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+    <!--date css-->
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll_date.css" />
+    <link rel="stylesheet" type="text/css" href="css/webcss/manualtransfer.css" />
+
+
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left aui-btn" onClick="javascript :history.back(-1);">
+            <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">人工产调</div>
+        <a class="aui-pull-right aui-btn ">
+            <span class="">提交</span>
+        </a>
+    </header>
+    <section class="aui-content aui-margin-b-15">
+        <ul class="aui-list aui-form-list">
+            <li class="aui-list-item">
+                <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label">
+                       <i class="iconfont blue mr5">&#xe683;</i>行政区
+                    </div>
+                    <div class="aui-list-item-input aui-list-item-arrow">
+                        <select>
+                            <option>浦东贵宾中心</option>
+                            <option>杨浦贵宾中心</option>
+                            <option>长宁贵宾中心</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="aui-list-item mt10">
+                <div class="aui-list-item-inner">
+                    <div class="aui-list-item-input" style="padding-left: 0">
+                        <input type="text" placeholder="请输入产调地址">
+                    </div>
+                </div>
+            </li>
+            <li class="aui-list-item mt10">
+                <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label">
+                       <i class="iconfont blue mr5">&#xe662;</i>区域归属
+                    </div>
+                    <div class="aui-list-item-input aui-list-item-arrow">
+                        <select>
+                            <option>杨浦区贵宾服务a组（区董）</option>
+                            <option>长宁区区贵宾服务a组（区董）</option>
+                            <option>浦东新区贵宾服务a组（区董）</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+
+            <li class="aui-item mt10">
+                <div class="aui-content aui-margin-b-15">
+                    <ul class="aui-list aui-media-list white" id="manua-list" >
+                        <li class="aui-list-item" >
+                            <div class="aui-list-item-inner">
+                                <label><input class="aui-radio" type="checkbox" id="CheckedAll"> 全选</label>
+                            </div>
+                        </li>
+                        <li class="aui-list-item-inner">
+                            <label><input class="aui-radio" type="checkbox" name="items" value="1"> 1.房屋状况及产权人信息</label>
+                        </li>
+                        <li class="aui-list-item-inner">
+                            <label><input class="aui-radio" type="checkbox" name="items" value="2">
+                             2.土地状况信息</label>
+                        </li>
+                        <li class="aui-list-item-inner">
+                            <label><input class="aui-radio" type="checkbox" name="items" value="3">
+                            3.房地产他项状况信息</label>
+                        </li>
+                        <li class="aui-list-item-inner">
+                            <label><input class="aui-radio" type="checkbox" name="items" value="4"> 4.预售商品房及预购商品房抵押信息</label>
+                        </li>
+                        <li class="aui-list-item-inner">
+                            <label><input class="aui-radio" type="checkbox" name="items" value="5">
+                            5.房屋建设工程抵押信息</label>
+                        </li>
+                        <li class="aui-list-item-inner">
+                            <label><input class="aui-radio" type="checkbox" name="items" value="6">
+                            6.房地产权限制状况信息</label>
+                        </li>
+                        <li class="aui-list-item-inner">
+                            <label><input class="aui-radio" type="checkbox" name="items" value="7"> 7.房屋租凭状况信息</label>
+                        </li>
+                        <li class="aui-list-item-inner">
+                            <label><input class="aui-radio" type="checkbox" name="items" value="8">
+                            8.房屋租凭状况信息</label>
+                        </li>
+                        <li class="aui-list-item-inner">
+                            <label><input class="aui-radio" type="checkbox" name="items" value="9">
+                            9.房屋租凭状况信息</label>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+</body>
+
+<script type="text/javascript" src="script/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="script/api.js"></script>
+<script type="text/javascript" src="script/aui-dialog.js"></script>
+<script type="text/javascript" src="script/aui-main.js"></script>
+<script type="text/javascript" src="script/layer.js"></script>
+
+<!--date-->
+<script type="text/javascript" src="script/mobiscroll_date.js"></script>
+<script type="text/javascript" src="script/mobiscroll.js"></script>
+
+<script>
+$(function () {
+    //获取jQuery 对象
+        $("#CheckedAll").click(function() {
+            $('[name=items]:checkbox').prop("checked", this.checked );
+            str();
+        });
+        $('[name=items]:checkbox').click(function() {
+            var $tmp = $('[name=items]:checkbox');
+            console.log($tmp.length == $tmp.filter(":checked").length);
+            $("#CheckedAll").prop('checked',$tmp.length == $tmp.filter(":checked").length);
+            str();
+        });
+
+       var str = function() {
+            //测试选中数据
+            var str="你选中的是：\r\n";
+            $('[name=items]:checkbox:checked').each(function(){
+                str+=$(this).val()+"\r\n";
+            })
+            alert(str);
+        }
+
+
+    });
+
+</script>
+
+
+
+</html>

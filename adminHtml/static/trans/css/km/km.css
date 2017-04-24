@@ -1,0 +1,58 @@
+.wrapper-content {
+  padding: 20px 15px 15px;
+}
+
+.km_content:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.wrapper .form_list .btn-sign {
+  margin-left: 10px;
+}
+
+.table-box-know .table tr td {
+  height: 90px;
+  overflow: hidden;
+  font-family: "Microsoft Yahei";
+}
+.table-box-know .table tr td {
+  border-top: 0px !important;
+  border-bottom: 1px solid #eee;
+  padding: 0;
+  vertical-align: middle;
+}
+.table-box-know .head {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #006ecd;
+}
+.table-box-know p {
+  margin: 2px 10px;
+  font-size: 12px;
+  color: #808080;
+}
+.table-box-know .data {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.table-box-know .btn-smar {
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 2px;
+}
+.table-box-know .sum_type {
+  margin-top: 20px;
+}
+.table-box-know img {
+  border-radius: 3px;
+}
+.table-box-know .name {
+  text-align: center;
+}

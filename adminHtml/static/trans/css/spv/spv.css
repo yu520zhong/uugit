@@ -1,0 +1,273 @@
+em, i {
+  font-style: normal;
+}
+.nomargin {
+  margin: 0!important;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.sign_normal {
+  margin-right: 5px;
+  padding: 0px 1px;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  border-radius: 2px;
+  background-color: #52cdec;
+}
+.navy_bg {
+  background-color: #53bdbd;
+}
+
+.navy {
+  color: #53bdbd;
+}
+
+.pink {
+  color: #f784a5;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.pink_bg {
+  background-color: #f784a5;
+}
+.btn_group {
+    margin-top: 110px;
+    float: right;
+}
+.btn-qing {
+    background: #47bfe2!important;
+    border: 1px solid #47bfe2;
+}
+.btn-qing {
+    background: #47bfe2!important;
+    border: 1px solid #47bfe2;
+}
+.feed-element .icon {
+  font-size: 34px;
+}
+.feed-element .icon_blue {
+  color: #52cdec;
+}
+
+.fund-title {
+  font-weight: normal;
+}
+
+.customerinfo tbody tr td {
+  height: 48px;
+  vertical-align: middle;
+}
+
+.customerinfo {
+  border: none !important;
+}
+
+.customerinfo tr th, .customerinfo tr td {
+  border: 1px solid #f3f3f3 !important;
+}
+
+.customerinfo tr th:first-child, .customerinfo tr td:first-child {
+  border-left: none !important;
+}
+
+.customerinfo tr th:last-child, .customerinfo tr td:last-child {
+  border-right: none !important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none;
+  border-color: #dddddd #dddddd rgba(0, 0, 0, 0);
+  border-bottom: #fff;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  color: #555;
+  cursor: default;
+}
+.clear {
+  clear: both;
+}
+.spread_line {
+  padding: 10px 20px 0;
+}
+.spread_tab {
+    width: 98%;
+    margin: 10px auto;
+    border: 1px solid #f3f3f4;
+    border-bottom: none;
+}
+.spread_tab thead tr th {
+    height: 35px;
+    background: #f9f9f9;
+    color: #343434;
+    border: 1px solid #f3f3f4;
+}
+.table_content .table > tbody > tr {
+    height: 48px;
+}
+
+.title {
+  float: left;
+}
+.title em {
+  display: inline-block;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+  color: #f784a5;
+}
+
+.excuse {
+  clear: both;
+  padding: 25px 30px;
+}
+
+.space30 {
+  padding-bottom: 30px !important;
+}
+
+.table_input {
+  width: 100%;
+  border: none;
+  padding: 4px 5px;
+  margin-right: 10px;
+}
+
+.icon_x {
+  margin-left: 5px;
+  font-size: 14px;
+}
+.icon-file {
+  padding: 3px 12px;
+  background: #428fcc;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+.icon_x:hover {
+  background: #1c84c6;
+  color: #fff;
+  border-radius: 2px;
+  padding: 0px 0 2px;
+}
+
+.btn-x {
+  background: #e5e5e5 !important;
+}
+
+.btn_file {
+  position: relative;
+  display: inline-block;
+}
+
+.btn_file .file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 22px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.space3 {
+  margin-right: 3px;
+}
+
+.boderbbt {
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+.view-content {
+  padding: 25px 30px 0px;
+  margin-top: 20px;
+}
+
+.view-box {
+  clear: both;
+  height: 140px;
+  padding: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: 1px solid #eee;
+}
+
+.view {
+  margin-bottom: 20px;
+  color: gray !important;
+}
+.view p {
+  line-height: 24px;
+}
+.view .auditor {
+  margin-right: 15px;
+}
+.view em {
+  color: #333;
+}
+.view .pink_bg {
+  padding: 2px 3px;
+  background: #f784a5;
+  color: #fff;
+  border-radius: 3px;
+}
+.view .time {
+  float: right;
+}
+.view .view_content {
+  display: inline-block;
+  float: right;
+  width: 93%;
+  padding: 5px 15px;
+  color: #666;
+  background: #f3f3f4;
+  border-radius: 3px;
+}
+.view .auditing {
+  display: inline-block;
+  float: left;
+  padding-top: 5px;
+}
+
+.submitter {
+  margin-top: 30px;
+  color: #808080;
+}
+.submitter span {
+  color: #333;
+}
+.enregisterarea {
+  display:inline;
+  float: left;
+  width:748px;
+  max-width:748px;
+  height:100px;
+  margin-left:5px;
+}
+.clickMe {
+  padding: 0 8px;
+}
+
+
+/*
+*******spvStop*******/
+.clear {
+  clear: both;
+}
+
+.margin-host {
+  margin-left: 65px;
+}
+.space-host {
+  width: 800px!important;
+}

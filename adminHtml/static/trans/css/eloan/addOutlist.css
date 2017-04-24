@@ -1,0 +1,43 @@
+.outlist-btns {
+    width: 760px;
+}
+
+.outlist-btns span {
+    margin-bottom: 5px;
+}
+
+.soutlist-btns-label {
+    width: 117px;
+    margin-top: 7px;
+    margin-right: 25px;
+    text-align: right;
+}
+.out-btn-select {
+    border: 1px solid #1c84c6!important;
+}
+
+.add-file {
+    width: 64px;
+    height: 64px;
+    margin: 8px 5px;
+    background: url(../../img/add.png) no-repeat center center;
+    position: relative;
+    display: inline;
+    float: left;
+    overflow: hidden;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+.file-mt-label {
+    margin-top: 17px;
+}
+.file-delete {
+    display: inline-block;
+    margin: 7px 0 0 15px;
+}
+.home-adress {
+    width: 758px;
+}
+.hide-style {
+    display: none;
+}

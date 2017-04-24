@@ -1,0 +1,90 @@
+/*
+* @Author: anchen
+* @Date:   2016-12-06 15:31:39
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-12-06 17:33:58
+*/
+.file-popup {
+    font-family: "Microsoft Yahei";
+}
+.file-popup h4.modal-title {
+  font-size: 18px;
+  text-align: left;
+}
+.file-popup .modal-header {
+    padding: 16px 15px;
+    text-align: center;
+    background-color: #f3f3f4;
+}
+.file-popup .modal-content {
+    width: 860px !important;
+}
+.file-popup .modal-body {
+    background: #fff;
+    padding: 0!important;
+    min-height: 380px;
+}
+.file-popup .modal-body ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0px;
+}
+.file-popup .modal-footer {
+    clear: both;
+    background-color: #f3f3f4;
+}
+.modal-body .tab_menu {
+  float: left;
+  width: 160px;
+}
+.modal-body .tab_box {
+  float: left;
+  width: 698px;
+  min-height: 380px;
+    border-left: 1px solid #eee;
+}
+.cover {
+    display: none;
+}
+.tab_menu li.selected {
+    background-color: #428fcc;
+    color: #fff;
+    border: 0 none;
+}
+.tab_menu ul li {
+    height: 28px;
+    padding-left: 12px;
+    line-height: 28px;
+    font-size: 14px;
+
+}
+.modal-body .tab .tab_menu {
+    min-height: 380px;
+}
+.table-file > thead > tr > th {
+    height: 47px;
+    color: #666;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+.table-file > tbody > tr {
+    height: 35px;
+}
+.table-file > tbody > tr:hover{
+    background-color: #c6ddf0;
+}
+.fa_down {
+    color: #666;
+}
+.fa-blue {
+    color: #1c84c6;
+}
+.fa-blue:hover {
+    color: #0c70b0;
+}
+.fa-pink {
+    color: #f784a5;
+}
+.fa-pink:hover {
+    color: #ef6089;
+}

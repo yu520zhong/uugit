@@ -1,0 +1,75 @@
+.color-info {
+  height: 24px;
+  padding-left: 25px;
+  font-family: "Microsoft Yahei";
+}
+.color-info li{
+  display:block;
+  float: left;
+  margin-right: 20px;
+  list-style: none;
+}
+.color-info li p{
+  display: inline-block;
+  float:left;
+  width: 24px;
+  height: 16px;
+  border-radius: 3px;
+}
+.color-info span{
+  display: inline-block;
+  float: left;
+  padding-left: 7px;
+  line-height: 16px;
+}
+.color-info li p.blue {
+  background: #d9f8fd;
+}
+.color-info li p.yellow {
+  background: #ffeeee;
+}
+.color-info li p.grey {
+  background: #f4f4f4;
+}
+
+text {
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+}
+
+.node rect {
+  stroke: #fff;
+  fill: #f4f4f4;
+}
+.node text {
+    font-size:15px;
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+}
+
+.edgePath path.path {
+  stroke: #333;
+  fill: none;
+  stroke-width: 1px;
+
+}
+.node text {
+  pointer-events: none;
+  font-family: "Microsoft Yahei";
+}
+
+/* This styles the title of the tooltip */
+.tipsy .name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin: 0;
+  font-family: "Microsoft Yahei";
+  margin-bottom: 5px;
+}
+
+/* This styles the body of the tooltip */
+.tipsy .description {
+  font-size: 13px;
+  font-family: "Microsoft Yahei";
+}

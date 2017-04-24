@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>RangeSlider带3款皮肤的jQuery范围选择插件代码 - 素材家园</title>
+<link rel="stylesheet" href="css/ion.rangeSlider.css" />
+<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"/>
+</head>
+<body>
+<div style="position:relative; padding:200px;width:250px;margin:0 auto;font-size:12px;">
+<input type="text" id="range_1" />
+
+</div>
+<!-- All JS -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
+<script>
+$(document).ready(function(){
+	$("#range_1").ionRangeSlider({
+		type: 'single',//设置类型
+		step: 1,
+		values : [ "一月", "二月", "三月", "四月", "五月", "六月",
+			"七月", "八月", "九月", "十月", "十一月", "十二月"
+		],
+		prettify: true,
+		hasGrid: true
+	});
+
+});
+$("#range_1").click(function(){
+	alert(parseInt($("#range_1").val())+1);
+})
+</script>
+</body>
+</html>

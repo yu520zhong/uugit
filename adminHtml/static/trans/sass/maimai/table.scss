@@ -1,0 +1,46 @@
+.table-box {
+  padding: 0 166px;
+}
+.table {
+  thead tr th {
+    background-color: #4bccec;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+  }
+  .spacing-table-one {
+    display: block;
+    width: 270px;
+  }
+  .spacing-table-two {
+    display: block;
+    width: 170px;
+  }
+  .top-spacing {
+    margin: 35px auto 20px;
+  }
+  .bottom-spacing {
+    margin: 0 auto 35px;
+  }
+  .num-input {
+    position: relative;
+    width: 270px;
+    margin: 0 auto;
+  }
+  .num-input-two {
+    position: relative;
+    width: 170px;
+    margin: 0 auto;
+  }
+  .spacing {
+    padding: 0 20px!important;
+  }
+  .unit {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
+}
+.input-money {
+  position: relative;
+}

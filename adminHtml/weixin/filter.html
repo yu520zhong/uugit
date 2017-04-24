@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+    <!--date css-->
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll_date.css" />
+
+</head>
+<body>
+    <div class="aui-searchbar aui-clearfix" id="search">
+        <div class="aui-searchbar-input aui-border-radius" tapmode onclick="doSearch()">
+            <i class="aui-iconfont aui-icon-search"></i>
+            <form action="javascript:search();">
+                <input type="search" placeholder="查询姓名或地址" id="search-input">
+            </form>
+        </div>
+        <div class="aui-searchbar-cancel white-text" tapmod>取消</div>
+    </div>
+    <div class="aui-list aui-form-list aui-searchbar-margin">
+        <div class="aui-item">
+            <div class="aui-list-item-inner aui-input-list">
+                    <div class="aui-col-xs-3 aui-input-element filter">
+                        在途案件
+                    </div>
+                    <div class="aui-col-xs-3 aui-input-element filter">
+                        结案案件
+                    </div>
+                    <div class="aui-col-xs-3 aui-input-element filter">
+                        爆单案件
+                    </div>
+                    <div class="aui-col-xs-3 aui-input-element filter">
+                        无效案件
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="aui-content aui-margin-b-15">
+        <ul class="aui-list aui-media-list">
+            <li class="aui-list-header newgrey">
+                当前共有<span class="mlr5 deepgrey">4</span>条信息
+            </li>
+            <li class="aui-list-item">
+                <div class="aui-media-list-item-inner">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-text mb10">
+                            <div class="aui-list-item-title font-small aui-text-grey"><span class="filter-style">已签约</span>SHYPS609100004</div>
+                            <div class="aui-list-item-right aui-text-grey"><i class="iconfont iconfont12 mr5">&#xe611;</i>2016-09-25</div>
+                        </div>
+                        <div class="aui-list-item-text aui-ellipsis-2 font-small mb5 midgrey">
+                            上海市浦东而去祝桥片区航亭环路祝桥片区航亭环
+                        </div>
+                        <div class="aui-list-item-text">
+                            <div class="aui-list-item-title font-small midgrey">上家：刘佩佩</div>
+                            <div class="aui-list-item-right midgrey">下家：林么么</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="aui-list-item">
+                <div class="aui-media-list-item-inner">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-text mb10">
+                            <div class="aui-list-item-title font-small aui-text-grey"><span class="filter-style">已过户</span>SHYPS609100004</div>
+                            <div class="aui-list-item-right aui-text-grey"><i class="iconfont iconfont12 mr5">&#xe611;</i>2016-09-25</div>
+                        </div>
+                        <div class="aui-list-item-text aui-ellipsis-2 font-small mb5 midgrey">
+                            上海市浦东而去祝桥片区航亭环路祝桥片区航亭环
+                        </div>
+                        <div class="aui-list-item-text">
+                            <div class="aui-list-item-title font-small midgrey">上家：刘佩佩</div>
+                            <div class="aui-list-item-right midgrey">下家：林么么</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="aui-list-item">
+                <div class="aui-media-list-item-inner">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-text mb10">
+                            <div class="aui-list-item-title font-small aui-text-grey"><span class="filter-style">已过户</span>SHYPS609100004</div>
+                            <div class="aui-list-item-right aui-text-grey"><i class="iconfont iconfont12 mr5">&#xe611;</i>2016-09-25</div>
+                        </div>
+                        <div class="aui-list-item-text aui-ellipsis-2 font-small mb5 midgrey">
+                            上海市浦东而去祝桥片区航亭环路祝桥片区航亭
+                        </div>
+                        <div class="aui-list-item-text">
+                            <div class="aui-list-item-title font-small midgrey">上家：刘佩佩</div>
+                            <div class="aui-list-item-right midgrey">下家：林么么</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="aui-list-item">
+                <div class="aui-media-list-item-inner">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-text mb10">
+                            <div class="aui-list-item-title font-small aui-text-grey"><span class="filter-style">已过户</span>SHYPS609100004</div>
+                            <div class="aui-list-item-right aui-text-grey"><i class="iconfont iconfont12 mr5">&#xe611;</i>2016-09-25</div>
+                        </div>
+                        <div class="aui-list-item-text aui-ellipsis-2 font-small mb5 midgrey">
+                            上海市浦东而去祝桥片区航亭环路祝桥片区航亭
+                        </div>
+                        <div class="aui-list-item-text">
+                            <div class="aui-list-item-title font-small midgrey">上家：刘佩佩</div>
+                            <div class="aui-list-item-right midgrey">下家：林么么</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+</body>
+
+<script type="text/javascript" src="script/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="script/api.js"></script>
+<script type="text/javascript" src="script/aui-dialog.js"></script>
+<script type="text/javascript" src="script/aui-main.js"></script>
+<script type="text/javascript" src="script/layer.js"></script>
+
+<!--date-->
+<script type="text/javascript" src="script/mobiscroll_date.js"></script>
+<script type="text/javascript" src="script/mobiscroll.js"></script>
+
+<script type="text/javascript" src="script/calendar.js"></script>
+
+<script>
+$(function () {
+
+    var $filter = $(".filter");
+    var $filter = $(".filter");
+    $filter.click(function() {
+        if($(this).hasClass("filter-mark")) {
+            $(this).removeClass("filter-mark");
+        }
+        else {
+            $(this).addClass("filter-mark");
+        }
+    });
+
+    var searchBar = document.querySelector(".aui-searchbar-input");
+    if(searchBar){
+        searchBar.onclick = function(){
+            document.querySelector(".aui-searchbar-cancel").style.marginRight = 0;
+        }
+    }
+    document.querySelector(".aui-searchbar-cancel").onclick = function(){
+        this.style.marginRight = "-"+this.offsetWidth+"px";
+        document.getElementById("search-input").value = '';
+        document.getElementById("search-input").blur();
+    }
+    function doSearch(){
+        var searchValue = document.getElementById("search-input").value;
+        if(searchValue){
+            alert("您输入的内容是:"+searchValue);
+        }
+    }
+
+});
+</script>
+
+
+
+</html>

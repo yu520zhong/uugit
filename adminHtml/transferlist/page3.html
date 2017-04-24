@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>商业贷款统计表</title>
+        <link href="../static/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../static/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+        <link href="../static/css/animate.css" rel="stylesheet"/>
+        <link href="../static/css/style.css" rel="stylesheet"/>
+
+        <link href="../static/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+        <!-- index_css -->
+        <link rel="stylesheet" href="../static/trans/css/common/table.css" />
+        <link rel="stylesheet" href="../static/trans/css/common/input.css" />
+        <link rel="stylesheet" href="../static/trans/css/common/btn.css" />
+        <link rel="stylesheet" href="../static/iconfont/iconfont.css" ">
+        <link rel="stylesheet" href="../static/trans/css/eachartdata/eachartdata.css">
+
+        <link rel="stylesheet" href="../static/trans/css/eachartdata/echartlist.css" />
+
+    </head>
+    <body style="background-color:#fff;">
+         <!--*********************** HTML_main*********************** -->
+        <div>
+            <div class="ibox-content" id="base_info">
+                <div class="row chartwo">
+                    <div class="col-md-12">
+                        <div class="clearfix mb30">
+                            <h3 class="content-title pull-left">贷款流失率</h3>
+                            <div class="calendar-watch clearfix">
+                                <p class="calendar-year">
+                                    <a href="#"><em>&lt;</em></a>
+                                    <span>2016年</span>
+                                    <a href="#"><em>&gt;</em></a>
+                                </p>
+                                <p class="calendar-month">
+                                    <span >1月</span><span>2月</span><span>3月</span><span>4月</span><span>5月</span><span>6月</span><span>7月</span><span>8月</span><span>9月</span><span>10月</span><span>11月</span><span>12月</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <div class="form_content">
+                                <select class="select_control mr5">
+                                    <option value="">
+                                        请选择
+                                    </option>
+                                    <option value="">
+                                        浦区董
+                                    </option>
+                                </select>
+                                <select class="select_control mr5">
+                                    <option value="">
+                                        请选择
+                                    </option>
+                                    <option value="">
+                                        李总监
+                                    </option>
+                                </select>
+                                <select class="select_control mr5">
+                                    <option value="">
+                                        请选择
+                                    </option>
+                                    <option value="">
+                                        李区经
+                                    </option>
+                                </select>
+                                <select class="select_control">
+                                    <option value="">
+                                        请选择
+                                    </option>
+                                    <option value="">
+                                        分行组别
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form_content space">
+                                <div class="add_btn mr5">
+                                    <button type="button" class="btn btn-success" style="padding: 5px 12px;">
+                                    <i class="icon iconfont"></i>
+                                        查询
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- table -->
+                        <div class="table-scroll">
+                            <table class="table table_blue  table-striped table-bordered table-hover customerinfo " >
+                                <thead>
+                                    <tr>
+                                        <th>区董</th>
+                                        <th>过户总单数</th>
+                                        <th>占比</th>
+                                        <th>合同价</th>
+                                        <th>商贷单数</th>
+                                        <th>商贷金额</th>
+                                        <th>公司办理</th>
+                                        <th>客户自办</th>
+                                        <th>流失金额</th>
+                                        <th>金额流失率</th>
+                                        <th>评估转化率</th>
+                                        <th>应收评估费</th>
+                                        <th>实收评估费</th>
+                                        <th>E+卡转化率（单数）</th>
+                                        <th>E+贷款转化率（金额）</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr>
+                                        <td>金磊</td>
+                                        <td>12</td>
+                                        <td>4%</td>
+                                        <td>33万元</td>
+                                        <td>38万元</td>
+                                        <td>35万元</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>38万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>瞿玲</td>
+                                        <td>12</td>
+                                        <td>4%</td>
+                                        <td>33万元</td>
+                                        <td>38万元</td>
+                                        <td>35万元</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>38万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>陈刚</td>
+                                        <td>12</td>
+                                        <td>4%</td>
+                                        <td>33万元</td>
+                                        <td>38万元</td>
+                                        <td>35万元</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>38万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>叶尉涵</td>
+                                        <td>12</td>
+                                        <td>4%</td>
+                                        <td>33万元</td>
+                                        <td>38万元</td>
+                                        <td>35万元</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>38万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>总计</td>
+                                        <td>12</td>
+                                        <td>4%</td>
+                                        <td>33万元</td>
+                                        <td>38万元</td>
+                                        <td>35万元</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>38万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                        <td>63万元</td>
+                                        <td>35万元</td>
+                                        <td>19%</td>
+                                        <td>19%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*********************** HTML_main*********************** -->
+
+        <!-- Mainly scripts -->
+        <script src="../static/js/jquery-2.1.1.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>
+        <script src="../static/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+        <script src="../static/trans/js/eachartdata/select_month.js"></script>
+
+    </body>
+</html>

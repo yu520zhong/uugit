@@ -1,0 +1,104 @@
+.scheduling-nomargin {
+    margin:0!important;
+}
+.scheduling-box {
+    background: #fff;
+    padding: 20px 35px;
+}
+
+.scheduling-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+.scheduling-table {
+  font-size: 14px;
+}
+.scheduling-table thead tr th {
+    background-color: #4bccec!important;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+}
+.table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td,.table-bordered > thead > tr > th {
+    border: 1px solid #f3f3f4;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: normal;
+}
+.scheduling-table tbody tr:nth-child(3n+1) td {
+  line-height: 19px;
+  font-size: 18px;
+}
+.scheduling-table tbody tr td:first-child {
+  border-left: 0;
+}
+.scheduling-table tbody tr td:last-child {
+  border-right: 0;
+}
+.scheduling-table {
+  border: 0;
+}
+.icon-moon {
+  color: #81d8d0;
+  line-height: 20px;
+  font-weight: bold;
+}
+.icon-day {
+  color: #f8cd59;
+  line-height: 17px;
+  font-size:20px;
+}
+.icon-arrow {
+  margin: 0 40px;
+  font-size: 24px;
+  color: #00a3e0;
+  cursor: pointer;
+}
+.nouser {
+  color: #bdbdbd;
+}
+.night_bg {
+  background:#f4f4f4;
+  color: #666;
+  height:30px;
+  line-height: 30px;
+}
+.month {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.month span {
+  display: inline-block;
+  float: left;
+  margin: 0px 15px;
+  font-size: 22px;
+  line-height: 34px;
+  color: #333;
+}
+
+.month span.explain {
+  font-family: "Microsoft Yahei";
+  font-size: 14px !important;
+  color: #ed5565;
+}
+
+.month .icon_arrow {
+  font-size: 16px;
+}
+
+.month .btn_small {
+  padding: 4px 8px;
+}
+.currmoth {
+  color: #1c84c6!important;
+}
+.currday {
+  color: #fff;
+  background-color: #f8cd59!important;
+}
+.currnight {
+  color: #fff;
+  background-color: #81d8d0!important;
+}

@@ -1,0 +1,80 @@
+/*百度Web Uploader*/
+.filelist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.filelist > div {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    margin: 8px 5px;
+    position: relative;
+    display: inline;
+    float: left;
+    overflow: hidden;
+    font-size: 12px;
+}
+.add-file {
+    width: 64px;
+    height: 64px;
+    margin: 8px 5px;
+    background: url('../../img/add.png') no-repeat center center;
+    position: relative;
+    display: inline;
+    float: left;
+    overflow: hidden;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+.filelist > div p.title {
+    display: none;
+}
+.filelist > div  p.imgWrap {
+    position: relative;
+    z-index: 2;
+    line-height: 64px;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 64px;
+    height: 64px;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webit-transition: 200ms ease-out;
+    -moz-transition: 200ms ease-out;
+    -o-transition: 200ms ease-out;
+    -ms-transition: 200ms ease-out;
+    transition: 200ms ease-out;
+    margin: 0!important;
+    padding: 0;
+    border: 1px solid #eee;
+}
+.filelist > div img {
+    width: 100%;
+}
+.filelist div.file-panel {
+    position: absolute;
+    height: 0;
+    background: rgba( 0, 0, 0, 0.5 );
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 300;
+}
+.filelist div.file-panel span {
+    width: 24px;
+    height: 24px;
+    display: inline;
+    float: right;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 5px 1px 1px;
+    cursor: pointer;
+}
+.customerinfo tbody tr:nth-child(even) {
+    background: #fff;
+}

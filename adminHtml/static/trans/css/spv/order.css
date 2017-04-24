@@ -1,0 +1,353 @@
+.ml100 {
+	margin-left: 100px;
+}
+.btn-toggle {
+    color: #1a7bb9;
+    border: 1px solid #1a7bb9;
+    background: #fff;
+    outline: none!important;
+}
+.input-group-addon {
+  float: left;
+  display: inline-block;
+  width: 32px !important;
+  margin-left: -5px;
+  margin-right: -5px;
+  padding: 6px 5px !important;
+  line-height: 1.428571429;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Microsoft Yahei";
+  font-weight: normal;
+  background-color: #eee;
+  border-width: 1px 0;
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+/* input-line */
+/* input-one: 150px; input-two: 190px; input-three: 230px; */
+input, .form-control {
+  border-radius: 2px !important;
+}
+.clear {
+  clear:both;
+}
+.title {
+  margin-bottom: 25px;
+  font-family: "Microsoft Yahei";
+  font-weight: 700;
+}
+.btn-grey {
+    color: #428fcc;
+    background-color: #eee;
+    border-color: #eee;
+}
+.form-row {
+  font-family: "Microsoft Yahei";
+}
+
+.form-rowbot {
+  margin-bottom: 20px;
+}
+
+.left-extent {
+  margin-right: 0px;
+}
+
+.span-tag {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  color: #808080;
+  vertical-align: middle;
+}
+
+.single {
+  margin-left: -370px;
+}
+
+.form-margin {
+  position: relative;
+}
+.form-margin label {
+  margin-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+}
+.form-margin .lable-one {
+  width: 120px;
+}
+.form-margin .lable-two {
+  width: 194px;
+}
+.form-margin .input-one {
+  width: 120px;
+}
+.form-margin .input-two {
+  width: 220px;
+}
+.form-margin .input-three {
+  width: 320px;
+}
+.form-margin .input-four {
+  width: 235px;
+}
+.form-margin .input-five {
+  width: 387px;
+}
+.form-margin .input-widest {
+  width: 447px;
+}
+.form-margin .select-one {
+  width: 100px;
+}
+.form-margin .sex-char {
+  display: inline-block;
+  width: 120px;
+}
+.form-margin .sex-char label {
+  margin-right: 10px;
+}
+
+.form-group .rate {
+  margin-left: 15px;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #808080;
+}
+
+.date_icon {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 14px;
+}
+
+.form-line {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  border-top: 1px solid #eee;
+}
+
+.form-btn {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.form-btn .btn-left-space {
+  margin-left: 120px;
+}
+.form-btn .btn-left .btn {
+  margin-right: 10px;
+}
+
+.form-inline .input-group .date-width {
+  width: 130px;
+}
+
+.btn-save {
+  background: #f784a5;
+  color: #fff;
+}
+
+.btn-save:hover {
+  background: #f784a5;
+  color: #f3f3f3;
+}
+
+.title-mark {
+    padding-left: 6px!important;
+    border-left: 3px solid #00CFEC!important;
+    line-height: 18px!important;
+}
+
+#sum {
+  font-size: 16px;
+  color: #f8ac59;
+}
+
+.table-input {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  border: none;
+  padding: 4px 5px;
+}
+
+.table-input-one {
+  display: inline-block;
+  width: 70px;
+  border: none;
+  padding: 4px 5px;
+  margin-right: 10px;
+}
+
+.btn-height a {
+  display: inline-block;
+  padding: 5px 2px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.btn-height .grey {
+  color: #808080;
+}
+
+.btn-right {
+  margin-right: 7px;
+}
+
+.table-select {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  border: none;
+  padding: 4px 5px;
+}
+.customerinfo tbody tr:nth-child(even) {
+    background: #fff;
+}
+.dl-horizontal dt {
+  font-weight: normal;
+  color: #808080;
+}
+
+.agree-tile {
+  margin-bottom: 5px;
+  font-family: "Microsoft Yahei";
+  font-weight: 700;
+}
+
+.btn-default {
+  color: #428fcc;
+  background-color: #e4e4e4;
+  border-color: #e4e4e4;
+}
+
+.table-capital {
+  margin-top: 20px;
+  padding: 0px 30px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  border-top: 1px solid #e7eaec;
+  line-height: 1.42857;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+ul.real-estate {
+  margin-top: 20px;
+  list-style: none;
+}
+ul.real-estate li {
+  margin-bottom: 15px;
+}
+ul.real-estate li em {
+  margin-right: 10px;
+  font-style: normal;
+}
+
+.real-estate dt {
+  padding: 5px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: normal;
+  color: #999c9e;
+}
+
+.real-estate dd {
+  margin-left: 20px;
+  padding: 5px;
+}
+
+dl.account {
+  height: 135px !important;
+}
+
+.ibox-conn {
+  padding: 8px 10px;
+  border: 1px solid #eee;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.ibox-conn dl {
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.ibox-conn dl dt {
+  font-weight: normal;
+  color: #808080;
+}
+.ibox-conn dl dd {
+  color: #333;
+}
+
+.info_box span {
+  padding: 3px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00CFEC;
+  display: inline-block;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.clear {
+	clear:  both;
+}
+.add-btn-person {
+	margin-left: 145px;
+	margin-bottom: 15px;
+}
+.icon-over {
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	color: #428fcc;
+	cursor: pointer;
+}
+.introduce {
+    margin-top: 35px;
+}
+.introduce .title {
+    display: inline-block;
+    float: left;
+    margin: 15px 15px 0;
+    color: #333;
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+    font-weight: normal;
+}
+.introduce .option {
+    display: inline;
+    float: left;
+    width: 820px;
+    max-width: 820px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #eee;
+    outline: none;
+}
+.area-label {
+  vertical-align: top;
+  margin-top: 10px;
+}

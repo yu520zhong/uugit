@@ -1,0 +1,121 @@
+.input-group-addon {
+  float: left;
+  display: inline-block;
+  width: 32px !important;
+  margin-left: -5px;
+  margin-right: -5px;
+  padding: 6px 5px !important;
+  line-height: 1.428571429;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Microsoft Yahei";
+  font-weight: normal;
+  background-color: #eee;
+  border-width: 1px 0;
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+/* input-line */
+/* input-one: 150px; input-two: 190px; input-three: 230px; */
+input, .form-control {
+  border-radius: 2px !important;
+}
+
+.title {
+  margin-bottom: 25px;
+  font-family: "Microsoft Yahei";
+}
+
+.form-row {
+  font-family: "Microsoft Yahei";
+}
+
+.form-rowbot {
+  margin-bottom: 20px;
+}
+
+.left-extent {
+  width: 430px;
+  margin-right: 40px;
+}
+
+.span-tag {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  color: #808080;
+  vertical-align: middle;
+}
+
+.single {
+  margin-left: -370px;
+}
+
+.form-margin {
+  position: relative;
+}
+.form-margin label {
+  margin-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+}
+.form-margin .lable-one {
+  width: 142px;
+}
+.form-margin .lable-two {
+  width: 194px;
+}
+.form-margin .input-one {
+  width: 168px;
+}
+.form-margin .input-two {
+  width: 260px;
+}
+.form-margin .input-three {
+  width: 320px;
+}
+.form-margin .input-widest {
+  width: 447px;
+}
+.form-margin .select-one {
+  width: 100px;
+}
+
+.date_icon {
+  position: absolute;
+  top: 7px;
+  right: 105px;
+  font-size: 14px;
+}
+
+.form-line {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  border-top: 1px solid #eee;
+}
+
+.form-btn {
+  margin-top: 40px;
+}
+.form-btn .btn-left-space {
+  margin-left: 166px;
+}
+.form-btn .btn-left .btn {
+  margin-right: 10px;
+}
+
+.form-inline .input-group .date-width {
+  width: 130px;
+}

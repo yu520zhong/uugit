@@ -1,0 +1,36 @@
+.filelist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding:20px 10px 30px;
+  li {
+    float:left;
+    width: 144px;
+    height: 200px;
+    margin-right:20px;
+    margin-bottom: 50px;
+  }
+  .cancel {
+    cursor: pointer;
+  }
+  .cancel:hover {
+    color: #337ab7;
+  }
+}
+
+.imgWrap img {
+  border: 1px solid #c2c2c2;
+}
+.fileposition {
+  position:relative;
+}
+.webupload_file {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:144px;
+  height: 200px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,295 @@
+.scroll_box {
+    font-family: "Microsoft Yahei";
+}
+.newtitle {
+    font-size: 14px;
+    font-weight: 700;
+}
+.newtitle-big {
+    font-size: 16px;
+    font-weight: 700;
+}
+.new-heading {
+    border-top: 0;
+    padding: 0px 10px 5px 10px;
+}
+.inlineblock {
+  display: inline-block;
+}
+.nomargin {
+  margin: 0!important;
+}
+.goodstyle {
+width: 800px;
+margin-left: 5px;
+}
+.goodstyle span {
+  margin: 0px 5px 10px 0px;
+}
+
+.newsarea {
+  width: 800px;
+  max-width: 800px;
+  height: 60px;
+  max-height: 60px;
+  border: 1px solid #eee;
+}
+
+.font12 {
+  font-size: 12px;
+}
+em, i {
+  font-style: normal;
+}
+
+
+.pink {
+  color: #f784a5;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.pink_bg {
+  background-color: #f784a5;
+}
+.btn_group {
+    margin-top: 110px;
+    float: right;
+}
+.btn-qing {
+    background: #47bfe2!important;
+    border: 1px solid #47bfe2;
+}
+.btn-qing {
+    background: #47bfe2!important;
+    border: 1px solid #47bfe2;
+}
+
+.btn-grey-border{
+    color: #ccc;
+    border: 1px solid #eee;
+    background: #fff;
+    outline: none!important;
+}
+.btn-grey-border:hover,.btn-grey-border:focus {
+  color: #ccc;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+.add-member {
+  margin-left: 127px;
+  color: #1a7bb9;
+  cursor: pointer;
+}
+
+
+
+.spread_tab {
+    width: 98%;
+    margin: 10px auto;
+    border: 1px solid #f3f3f4;
+    border-bottom: none;
+}
+.spread_tab thead tr th {
+    height: 35px;
+    background: #f9f9f9;
+    color: #343434;
+    border: 1px solid #f3f3f4;
+}
+.table_content .table > tbody > tr {
+    height: 48px;
+}
+.dl-horizontal {
+  font-family: SimSun;
+}
+.grey-shallow {
+  color: #808080;
+}
+.grey-deep {
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+.view-content {
+  padding: 25px 30px 0px;
+  margin-top: 20px;
+}
+
+.view-box {
+  clear: both;
+  height: 110px;
+  padding: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: 1px solid #eee;
+  font-family: "Microsoft Yahei";
+}
+
+.view {
+  margin-bottom: 20px;
+  color: gray !important;
+}
+.view p {
+  line-height: 24px;
+}
+.view .pink_bg {
+  padding: 2px 3px;
+  background: #f784a5;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.view .view_content {
+  display: inline-block;
+  float: right;
+  width: 93%;
+  padding: 5px 15px;
+  color: #666;
+  background: #f3f3f4;
+  border-radius: 3px;
+}
+.view .auditing {
+  display: inline-block;
+  float: left;
+  padding-top: 5px;
+}
+
+.submitter {
+  margin-top: 30px;
+  color: #808080;
+  font-family: "Microsoft Yahei";
+}
+.view .auditor {
+    margin-right: 15px;
+}
+.submitter span {
+  color: #333;
+}
+.view .time {
+    float: right;
+}
+.excuse {
+    clear: both;
+    padding: 25px 0px;
+    font-family: "Microsoft Yahei";
+}
+.newstextone {
+width:100%; resize: none;height:60px;border-radius: 3px;border: 1px solid #eee;padding:10px;
+}
+
+.news-box {
+    clear: both;
+    height: 340px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    font-family: "Microsoft Yahei";
+}
+
+/*
+input width reset set */
+.isnowid {
+   width: 114px;
+}
+.yuanwid {
+  width: 180px;
+}
+.data_style {
+  width: 134px;
+}
+.mendwidth {
+  width: 491px;
+}
+.ismortgage {
+   width: 160px;
+}
+
+.line34 {
+  line-height: 34px;
+}
+.form_content p {
+  display: inline-block;
+}
+ul.textinfo {
+  overflow: hidden;
+  padding-left: 0!important;
+  margin-left: 0!important;
+}
+ul.textinfo li {
+  float: left;
+  list-style: none;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+ul.textinfo li em {
+  display: inline-block;
+  font-style: normal;
+  width: 102px;
+  margin-right: 20px;
+  text-align: right;
+  color: #808080;
+}
+ul.textinfo li span {
+  display: inline-block;
+  color: #333;
+}
+.infolong {
+  width: 775px;
+}
+.optionwid {
+  width: 757px;
+}
+.marginbot {
+    margin-bottom: 66px!important;
+}
+
+/*jqGrid_wrapper表格*/
+.jqGrid_wrapper {
+    margin: 20px 0 30px;
+}
+.ui-jqgrid-labels {
+    height: 35px!important;
+}
+.ui-th-ltr,.ui-jqgrid-hbox {
+    color: #fff!important;
+    background-color: #52cdec!important;
+    font-weight: normal!important;
+    font-size: 13px!important;
+    text-shadow: none!important;
+}
+.add-jqgrid {
+    height: 48px!important;
+    padding-left: 15px!important;
+    font-size: 14px!important;
+}
+.ui-jqgrid-btable tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+
+/* dowebok viewer图片预览js  */
+#dowebok { }
+#dowebok li {
+    display: inline-block;
+    width: 120px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+#dowebok li img {
+    width: 100%;
+}
+
+.no-padding {
+  padding: 0;
+}
+.clearboth {
+  clear: both;
+}

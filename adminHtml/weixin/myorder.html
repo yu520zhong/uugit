@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/loaders.css" />
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <div class="aui-title">我的预约</div>
+       <a class="aui-pull-right aui-btn " href="index.html">
+            <span class="aui-iconfont aui-icon-plus"></span>
+        </a>
+    </header>
+    <article class="aui-content">
+        <ul class="aui-list aui-media-list">
+            <li class="aui-list-header header_grey_bg">
+               <div class="aui-info pd0">
+                    <div class="aui-info-item">
+                       <span class="aui-margin-l-5 book">您还剩余<span class="num">3</span>次预约机会</span>
+                    </div>
+                </div>
+            </li>
+            <li class="aui-list-item" style="margin-bottom: 8px;">
+                <div class="aui-media-list-item-inner">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title font15 order-title left mr10">浦东<span class="newgrey">(参与人数6人)</span></div>
+                        <div class="aui-list-item-title font15 order-title left" >
+                            预约号：<em class="yellow">2016090</em>
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey clear">
+                            房屋地址：上海市浦东而去祝桥片区航亭环路99弄71号0302室
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey">
+                            备注：天气炎热，注意开空调并准备矿泉水。
+                        </div>
+                        <div class=" font14 newgrey">
+                            <i class="iconfont blue mr5 font14">&#xe605;</i>2015-07-13 13:00-15:00
+                        </div>
+                    </div>
+                     <div class="aui-list-item-media listspace">
+                    </div>
+                    <div class="aui-btn aui-center"  onclick="loading();">取消预约</div>
+                    <span class="shuxing"></span>
+                </div>
+            </li>
+            <li class="aui-list-item" style="margin-bottom: 8px;">
+                <div class="aui-media-list-item-inner">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title font15 order-title left mr10">浦东<span class="newgrey">(参与人数6人)</span></div>
+                        <div class="aui-list-item-title font15 order-title left" >
+                            预约号：<em class="yellow">2016090</em>
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey clear">
+                            房屋地址：上海市浦东而去祝桥片区航亭环路99弄71号0302室
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey">
+                            备注：天气炎热，注意开空调并准备矿泉水。
+                        </div>
+                        <div class=" font14 newgrey">
+                            <i class="iconfont blue mr5 font14">&#xe605;</i>2015-07-13 13:00-15:00
+                        </div>
+                    </div>
+                    <div class="aui-list-item-media listspace">
+                        <div class="aui-btn aui-center" onclick="openDialog('text')"">取消预约</div>
+                    </div>
+                </div>
+            </li>
+            <li class="aui-list-item" style="margin-bottom: 8px;">
+                <div class="aui-media-list-item-inner">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title font15 order-title left mr10">浦东<span class="newgrey font12">(参与人数60人)</span></div>
+                        <div class="aui-list-item-title font15 order-title left" >
+                            预约号：<em class="yellow">2016090</em>
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey clear">
+                            房屋地址：上海市浦东而去祝桥片区航亭环路99弄71号0302室
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey">
+                            备注：天气炎热，注意开空调并准备矿泉水。
+                        </div>
+                        <div class=" font14 newgrey">
+                            <i class="iconfont blue mr5 font14">&#xe605;</i>2015-07-13 13:00-15:00
+                        </div>
+                    </div>
+                    <div class="aui-list-item-media listspace">
+                        <div class="aui-btn aui-center trans_bg red">已取消</div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="aui-list-item" style="margin-bottom: 8px;">
+                <div class="aui-media-list-item-inner">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title font15 order-title left mr10">浦东<span class="newgrey">(参与人数60人)</span></div>
+                        <div class="aui-list-item-title font15 order-title left" >
+                            预约号：<em class="yellow">2016090</em>
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey clear">
+                            房屋地址：上海市浦东而去祝桥片区航亭环路99弄71号0302室
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey">
+                            备注：天气炎热，注意开空调并准备矿泉水。
+                        </div>
+                        <div class=" font14 newgrey">
+                            <i class="iconfont blue mr5 font14">&#xe605;</i>2015-07-13 13:00-15:00
+                        </div>
+                    </div>
+                    <div class="aui-list-item-media listspace">
+                        <div class="aui-btn aui-center trans_bg">已过期</div>
+                    </div>
+                </div>
+            </li>
+            <li class="aui-list-item" style="margin-bottom: 8px;">
+                <div class="aui-media-list-item-inner">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title font15 order-title left mr10">浦东<span class="newgrey">(参与人数60人)</span></div>
+                        <div class="aui-list-item-title font15 order-title left" >
+                            预约号：<em class="yellow">2016090</em>
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey clear">
+                            房屋地址：上海市浦东而去祝桥片区航亭环路99弄71号0302室
+                        </div>
+                        <div class="aui-list-item-text font12 newgrey">
+                            备注：天气炎热，注意开空调并准备矿泉水。
+                        </div>
+                        <div class=" font14 newgrey">
+                            <i class="iconfont blue mr5 font14">&#xe605;</i>2015-07-13 13:00-15:00
+                        </div>
+                    </div>
+                    <div class="aui-list-item-media listspace">
+                        <div class="aui-btn aui-center trans_bg">已过期</div>
+                    </div>
+
+                </div>
+            </li>
+
+        </ul>
+    </article>
+
+
+
+
+</body>
+
+<script type="text/javascript" src="script/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="script/api.js"></script>
+<script type="text/javascript" src="script/aui-dialog.js"></script>
+<script type="text/javascript" src="script/aui-main.js"></script>
+<script type="text/javascript" src="script/layer.js"></script>
+<script type="text/javascript" src="script/aui-popup.js"></script>
+<script type="text/javascript">
+    var popup = new auiPopup();
+</script>
+
+
+
+<script type="text/javascript">
+    /*function cancel(){
+        layer.open({
+            type: 0,
+            title: '',
+            anim: 'up',
+            shadeClose: false,
+            yes: function(index){
+                alert('点击了是')
+                layer.close(index)
+            }
+            ,btn: ['确认', '取消'],
+            content: '<h2 class="dialog-head mt20 font18">您确定要取消本次预约吗？</h2>'
+        });
+    };*/
+    function loading(){
+       layer.open({
+        className: 'popuo-loading',
+        type: 1,
+        shadeClose: false,
+        shade: false,
+
+
+      content: '<div class="item-loader-container">'
+            + '<div class="la-line-spin-clockwise-fade la-2x left">'
+            + '<div></div>'
+            + '<div></div>'
+            + '<div></div>'
+            + '<div></div>'
+            + '<div></div>'
+            + '<div></div>'
+            + '<div></div>'
+            + '<div></div>'
+            + '</div>'
+            + '<p class="dialog-head left font16 ml10">加载中...</p>'
+
+    })
+    };
+
+    var dialog = new auiDialog({})
+    function openDialog(text){
+        dialog.alert({
+            title:"",
+            msg:'您确定要取消本次预约吗?',
+            buttons:['取消','确定']
+        },function(ret){
+            if(ret){
+                if(ret.buttonIndex == 2) {
+                    alert("你选择的是2");
+                } else {
+                    return false;
+                }
+            }
+        })
+    }
+
+
+</script>
+</html>

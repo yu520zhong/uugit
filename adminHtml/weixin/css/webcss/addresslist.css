@@ -1,0 +1,142 @@
+/*
+* @Author: uu
+* @Date:   2016-11-17 15:34:44
+* @Last Modified time: 2016-11-24 16:51:10
+*/
+/*
+****** addresslist ******
+ */
+.search-grey-bg {
+    background-color: #c9c9ce;
+}
+
+.list_group {
+    background: #f5f5f5;
+    width: 100%;
+}
+
+.list {
+    width: 100%;
+
+}
+
+.list li {
+    border-top: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+
+.float {
+    position: absolute;
+    left: 0;
+    right: 0px;
+    z-index: 1;
+    top: 0;
+}
+
+.title {
+    padding: 0 15px;
+    height: 1.6rem;
+    font-size: 0.7rem;
+    line-height: 1.6rem;
+    color: #333!important;
+    background: #f5f5f5;
+}
+
+.list a {
+    display: block;
+    height: 2.2rem;
+    margin-left: 15px;
+    line-height: 2.2rem;
+    font-size: 0.75rem;
+    border-bottom: 1px #e5e5e5 solid;
+    color:  #333;
+}
+.list a:last-child {
+    border-bottom: 0 none;
+}
+
+.index {
+    padding: 5px 3px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    top: 130px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.index a {
+    display: block;
+    width: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    padding: 3px 0px;
+    writing-mode:lr-tb;
+    color: #333;
+}
+
+.list li a {
+    padding-right: 40px;
+    color: #333;
+}
+.job {
+    text-align: right;
+    color: #808080;
+}
+.subtitle {
+    padding: 0 15px;
+    height: 1.6rem;
+    font-size: 0.7rem;
+    line-height: 1.6rem;
+    color: #808080!important;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.aui-bar-nav .aui-btn {
+    position: relative;
+    z-index: 20;
+    height: 45px;
+    line-height: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    border-radius: 0.1rem;
+    border-width: 0;
+    background: transparent !important;
+}
+.aui-bar-nav .aui-title {
+    min-height: 45px;
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    right: 0;
+    left: 0;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 2;
+}
+.aui-bar {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    min-height: 45px;
+    font-size: 18px;
+    text-align: center;
+    display: table;
+}

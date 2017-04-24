@@ -1,0 +1,16 @@
+.nowrap {
+    white-space:nowrap;
+}
+.visible {
+    overflow: visible!important;
+}
+.table-scroll {
+    overflow-x: auto;
+}
+.table-scroll tr th {
+    white-space:nowrap;
+}
+.table_content {
+    padding-bottom: 0;
+}
+

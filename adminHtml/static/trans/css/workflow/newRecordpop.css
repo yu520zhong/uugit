@@ -1,0 +1,96 @@
+/*
+* @Author: MIUu
+* @Date:   2016-12-08 11:42:56
+* @Last Modified by:   MIUu
+* @Last Modified time: 2016-12-08 18:01:14
+*/
+.modal_title {
+    margin: 0px 0px 25px 0px;
+    font-family: "Microsoft Yahei";
+    font-weight: 700;
+}
+.form_list {
+    margin: 0;
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+    overflow: hidden;
+}
+.pop-list .line {
+    margin-bottom: 10px;
+}
+.pop-list .line p {
+    display: inline-block;
+}
+.pop-list .line p em {
+    display: inline-block;
+    width: 110px;
+    margin-right: 20px;
+    font-style: normal;
+    text-align: right;
+}
+.pop-list .line p span {
+    display: inline-block;
+}
+.pop-list .line p span.stanwidth {
+    width: 200px;
+}
+
+.modal-box  {
+    font-family: "Microsoft Yahei";
+}
+.media-body {
+    font-size: 14px;
+}
+.media-body strong {
+    margin-right: 10px;
+}
+.media-body .text-muted {
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+}
+.media-body .small {
+    font-size: 12px;
+}
+.media-body .small p {
+    margin-bottom: 2px;
+}
+.modal-box .row {
+   margin-left: 0;
+   margin-right: 0;
+}
+.feed-activity-list {
+    padding: 20px;
+}
+.feed-activity-list .title{
+    font-size: 16px;
+    font-weight: bold;
+    color:#333;
+}
+.feed-activity-list:first-child {
+    border-bottom: 1px solid #eee;
+    margin-top: 10px;
+}
+.feed-element {
+    margin: 0 ;
+    padding: 25px;
+    border-radius: 5px;
+}
+.feed-activity-list .feed-element {
+    margin: 10px 0;
+}
+.feed-element img.img-circle {
+    width: 68px;
+    height: 68px;
+}
+
+.feed-element-grey {
+    background-color: #eeeeee;
+}
+.feed-element-border {
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+.feed-element-border:hover {
+    background-color: #d2f3ff;
+}

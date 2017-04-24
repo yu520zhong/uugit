@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>jQuery响应式lightbox插件JK Responsive演示-组图_dowebok</title>
+<link rel="stylesheet" href="css/jkresponsivegallery.css">
+<style>
+* { margin: 0; padding: 0;}
+ul { list-style-type: none;}
+.dowebok { width: 800px; margin: 0 auto; text-align: center;}
+</style>
+</head>
+
+<body>
+<h1>组图</h1>
+
+<div class="dowebok">
+	<div class="rthumbnail">
+		<a href="images/1.jpg">
+			<img src="images/1s.jpg" width="150" height="112">
+		</a>
+		<div  class="rcaption">一对鸟在看日出 <a href="http://www.dowebok.com">一个链接</a></div>
+	</div>
+
+	<div class="rthumbnail">
+		<a href="images/2.jpg">
+			<img src="images/2s.jpg" height="112" border="0" width="150">
+		</a>
+		<div class="rcaption">标题/描述</div>
+	</div> 
+	
+	<div class="rthumbnail">
+		<a href="images/3.jpg">
+			<img src="images/3s.jpg" height="103" border="0" width="150">
+		</a>
+		<div class="rcaption">标题/描述</div>
+	</div> 
+	
+	<div class="rthumbnail">
+		<a href="images/4.jpg">
+		<img src="images/4s.jpg" height="131" border="0" width="150">
+		</a>
+		<div class="rcaption">标题/描述</div>
+	</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jkresponsivegallery.js"></script>
+<script>
+$(function() {
+	$('.rthumbnail').responsivegallery();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 以下信息与演示无关，可不必理会 -->
+<style>
+body { margin: 0; border-left: 200px solid #ccc;}
+
+h1 { margin: 40px auto; font: 32px "Microsoft Yahei"; text-align: center;}
+
+.menu { position: absolute; left: 0; top: 0; bottom: 0; width: 200px; padding-top: 100px; font-family: Consolas,arial,"宋体"; background-color: #ccc;}
+.menu a { display: block; height: 40px; margin: 0 0 1px 2px; padding-left: 10px; line-height: 40px; font-size: 14px; color: #333; text-decoration: none;}
+.menu a:hover { background-color: #eee;}
+.menu .cur { color: #000; background-color: #fff !important;}
+
+.vad { margin: 250px 0 10px; font-family: Consolas,arial,宋体,sans-serif; text-align:center;}
+.vad a { display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; padding: 0 50px; font-size: 14px; text-align:center; color:#eee; text-decoration: none; background-color: #222;}
+.vad a:hover { color: #fff; background-color: #000;}
+.thead { width: 728px; height: 90px; margin: 0 auto; border-bottom: 40px solid transparent;}
+
+.code { position: relative; margin-top: 100px; padding-top: 41px;}
+.code h3 { position: absolute; top: 0; z-index: 10; width: 100px; height: 40px; font: 16px/40px "Microsoft Yahei"; text-align: center; cursor: pointer;}
+.code .cur { border: 1px solid #f0f0f0; border-bottom: 1px solid #f8f8f8; background-color: #f8f8f8;}
+.code .h31 { left: 0;}
+.code .h32 { left: 102px;}
+.code .h33 { left: 204px;}
+.code .h34 { left: 306px;}
+.code ol { padding: 0;}
+.code { width: 800px; margin-left: auto; margin-right: auto;}
+pre { padding: 15px 0; border: 1px solid #f0f0f0; background-color: #f8f8f8;}
+.f-dn { display: none;}
+</style>
+
+<p class="vad">
+	<a href="http://www.dowebok.com/" target="_blank">dowebok.com</a>
+	<a href="http://www.dowebok.com/209.html" target="_blank">说 明</a>
+	<a href="http://www.dowebok.com/209.html" target="_blank">下 载</a>
+</p>
+
+<div class="menu">
+	<a href="./">1、单张图片</a>
+	<a href="index2.html">2、JS 增加内容</a>
+	<a class="cur" href="index3.html">3、组图</a>
+	<a href="index4.html">4、文字链接</a>
+	<a href="index5.html">5、加载 Youtube 视频</a>
+</div>
+
+</body>
+</html>

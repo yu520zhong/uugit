@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>监管资金出入账明细查询</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../static/css/animate.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <!-- Data Tables -->
+    <link rel="stylesheet" href="../static/css/plugins/dataTables/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="../static/css/plugins/datapicker/datepicker3.css">
+    <link rel="stylesheet" href="../static/css/plugins/dataTables/dataTables.responsive.css" />
+    <link rel="stylesheet" href="../static/css/plugins/dataTables/dataTables.tableTools.min.css" />
+
+    <!-- index_css -->
+    <link rel="stylesheet" href="../static/trans/css/common/base.css" />
+    <link rel="stylesheet" href="../static/trans/css/common/table.css" />
+    <link rel="stylesheet" href="../static/trans/css/common/input.css" />
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css" ">
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div  class="gray-bg">
+
+
+            <!--*********************** HTML_main*********************** -->
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table_content">
+                            <table class="table table_blue table-striped table-bordered table-hover " id="editable" >
+                                <thead>
+                                    <tr>
+                                        <th>流水编号</th>
+                                        <th>金额（万元）</th>
+                                        <th>账户信息</th>
+                                        <th>审批状态</th>
+                                        <th>物业地址</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="big">
+                                                <a href="javascript:;">
+                                                    ZY-0000001
+                                                </a>
+                                            </p>
+                                            <p class="big">AX002A</p>
+                                        </td>
+                                        <td>
+                                            <p class="big">
+                                                <span class="sign_normal" style="background-color:#53bdbd;">入账</span>
+                                            </p>
+                                            <p class="big">
+                                                61,200
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p><span style="color:#f784a5;" >付款：</span>程序猿&nbsp;&nbsp;6228480408889224870/光大银行上海北支行<span style="background:#f784a5;" class="sign_normal ml5">转账</span></p>
+                                            <p><span style="color:#53bdbd;">收款：</span>李晓明&nbsp;&nbsp;6228480408889224870/光大银行上海北支行</p>
+                                        </td>
+                                        <td>
+                                            <p class="smll_sign">
+                                                <i class="sign_normal">录入</i>
+                                                <span>张三&nbsp;</span>2016-05-30
+                                            </p>
+                                            <p class="smll_sign">
+                                                <i class="sign_normal">结束</i>
+                                                2016-05-30
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                上海市长宁区延安西路998号1弄202
+                                            </p>
+                                            <p class="smll_sign">
+                                                <i class="sign_normal">审核人</i>
+                                                王五<span><</span>李四<林三
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--*********************** HTML_main*********************** -->
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="../static/js/jquery-2.1.1.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="../static/js/inspinia.js"></script>
+    <script src="../static/js/plugins/pace/pace.min.js"></script>
+        <script src="../static/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.input-daterange').datepicker({
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true
+            });
+
+
+        });
+    </script>
+</body>
+</html>

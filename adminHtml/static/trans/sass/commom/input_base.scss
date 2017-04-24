@@ -1,0 +1,123 @@
+.form_list {
+	margin: 20px 0px;
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+    .form_content {
+    	float:left;
+		margin: 0px 5px 15px 0px;
+	}
+	label {
+		font-family: "Microsoft Yahei";
+		font-size: 14px;
+    	font-weight: normal;
+	}
+	.sign {
+		margin-top: 0px;
+		padding-bottom: 4px;
+	}
+    .input_type {
+    display: inline-block;
+    padding: 6px 12px;
+    color: inherit;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 0px;
+
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+	}
+	.input_type:focus {
+    border-color: #1ab394 !important;
+    outline: none;
+	}
+	.sign_left {
+		display: inline-block;
+		width: 152px;
+    	margin-right: 20px;
+    	color: #333;
+    	text-align: right;
+    }
+    .sign_left_two {
+        display: inline-block;
+        width: 100px;
+        margin-right: 20px;
+        color: #333;
+        text-align: right;
+    }
+	.sign_right {
+        width: 290px;
+	}
+    .sign_right_two {
+        width: 170px;
+    }
+	.checkbox label {
+		margin-right: 7px;
+	}
+	.space {
+		margin-left: 5px;
+	}
+	.label-info:hover {
+		color:#f8f8f8;
+	}
+}
+.select_control {
+    display: inline-block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #666;
+	background-color: #fff;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 0px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.select_control:focus {
+    border-color: #1ab394 !important;
+    outline: none;
+}
+.input-group .data_style {
+	width: 134px;
+}
+.input-group-addon {
+	float:left;
+	display:inline-block;
+    width: 32px!important;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 6px 5px!important;
+    line-height: 1.428571429;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    font-family: "Microsoft Yahei";
+    font-weight: normal;
+    background-color: #eee;
+    border-width: 1px 0;
+}
+.input-daterange input:first-child {
+    border-radius: 0px;
+}
+.input-daterange input:last-child {
+    border-radius: 0px;
+}
+.datepicker.dropdown-menu {
+    z-index: 9999!important;
+}
+.mend_select {
+	float:left;
+	padding-top: 5px;
+}
+.dataleft {
+	padding-left: 4px;
+}
+.add_btn .btn {
+	margin-right: 5px;
+}
+.submit_btn {
+    margin-left: 125px;
+    margin-top: 3px;
+}

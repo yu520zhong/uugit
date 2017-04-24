@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+    <!--date css-->
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll_date.css" />
+
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <div class="aui-title">提交成功</div>
+    </header>
+    <section class="aui-content aui-margin-b-15">
+        <div class="submit-result text-center">
+            <i class="iconfont submit-success cyan">&#xe606;</i>
+            <h2 class="dialog-head font22">提交成功</h2>
+            <div class="dialog-text">
+                <p>产调申请已提交誉萃人工处理，将于24小时内回复</p>
+                <p>如有任何疑问请联系以下工作人员</p>
+                <p class="dialog-text-tag">唐优丽 139-1739-8207</p>
+            </div>
+        </div>
+        <div class="plr15 mt28"><input type="submit" class="aui-btn aui-btn-info aui-btn-block aui-btn-user" value="返回"></div>
+    </section>
+</body>
+
+<script type="text/javascript" src="script/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="script/api.js"></script>
+<script type="text/javascript" src="script/aui-dialog.js"></script>
+<script type="text/javascript" src="script/aui-main.js"></script>
+<script type="text/javascript" src="script/layer.js"></script>
+
+<!--date-->
+<script type="text/javascript" src="script/mobiscroll_date.js"></script>
+<script type="text/javascript" src="script/mobiscroll.js"></script>
+
+<script type="text/javascript" src="script/calendar.js"></script>
+
+<script>
+$(function () {
+    //获取jQuery 对象
+    var $roomlist = $("#roomList");
+    var $tdlist = $("#dayList tr td");
+    var $title = $(".date-title");
+
+    //获取当天日期
+    $title.text(getDateWeek());
+
+    //遮罩弹窗层隐藏显示
+    $roomlist.hide();
+    $("#dateseLect").on("click",function() {
+        $roomlist.show();
+    })
+    $(".layui-m-layershade").on("click",function() {
+        $roomlist.hide();
+    })
+
+    //当前日期点击切换效果
+    $tdlist.on("click", function() {
+        var obj = $(this);
+        var date = obj.attr("date");
+        $("#dayList tr td").removeClass("curr");
+        $(this).addClass("curr");
+        $title.text(date);
+    });
+
+    //循环日期找到”今天“并添加当前样式
+    $tdlist.each(function(){
+        var tt = $(this).attr('date');
+        if(tt == getDateWeek()) {
+            $(this).addClass('curr');
+        }
+    });
+
+    //日期函数补零
+    function Appendzero (obj) {
+        if (obj < 10) return "0" + obj; else return obj;
+    }
+    function getDateWeek () {
+        var now = new Date ();
+        var year = now.getFullYear ();//获取四位数年数
+        var month = now.getMonth () + 1;
+        var date = now.getDate ();
+        var weeknum = now.getDay ();
+        var hour = now.getHours ();
+        var minute = now.getMinutes ();
+        var second = now.getSeconds ();
+        var nowdate = year + "-" + Appendzero (month) + "-" + Appendzero (date);
+        return nowdate;
+    };
+
+    //点击切换效果
+
+    /*$(".choiceoption").click(function() {
+        $(this).addClass('select-mark');
+    });*/
+
+        /*if($(this).hasClass("selected-mark")) {
+             $(".item").show();
+        }
+        else {
+             $(".item").hide();
+        }
+        $(this).toggleClass("selected-mark");
+        $(".choiceoption :lt(3)").removeClass("selected-mark");*/
+
+   /* $(".choiceoption :lt(3)").click(function() {
+        if($(this).hasClass("selected-mark")) {
+            $(this).removeClass("selected-mark");
+        }
+        else {
+            $(this).addClass("selected-mark");
+        }
+        $("#choices4").removeClass('selected-mark');
+        $(".item").show();
+    })*/
+
+    var $choice = $(".choiceoption");
+    var $choicelt = $(".choiceoption:lt(3)");
+    $choice.eq(3).click(function() {
+        if($(this).hasClass("select-mark")) {
+             $(".item").show();
+        }
+        else {
+             $(".item").hide();
+        }
+        $(this).toggleClass("select-mark");
+        $choicelt.removeClass("select-mark");
+    });
+    $choicelt.click(function() {
+        if($(this).hasClass("select-mark")) {
+            $(this).removeClass("select-mark");
+        }
+        else {
+            $(this).addClass("select-mark");
+        }
+        $choice.eq(3).removeClass('select-mark');
+        $(".item").show();
+    })
+
+});
+</script>
+
+
+
+</html>

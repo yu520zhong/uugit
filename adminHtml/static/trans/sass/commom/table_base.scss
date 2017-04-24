@@ -1,0 +1,198 @@
+@charset "utf-8";
+.table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #f3f3f4;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #e7eaec;
+    line-height: 1.42857;
+    padding: 3px 8px;
+    vertical-align: top;
+}
+.table_blue thead tr th {
+    color: #fff;
+    background-color: #52cdec;
+    font-weight: normal;
+}
+table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    float: right;
+    font-family: fontawesome;
+    color: #fff!important;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.task-list tr td.pl10 {
+    padding: 0 0 0 10px;
+}
+
+.task-list tr td .case-ctm {
+    font-size: 12px;
+}
+
+.sign_blue {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    padding: 1px 10px;
+    margin-top: 2px;
+    margin-right: 5px;
+    border-radius: 3px;
+    background-color: #52cdec;
+}
+.table > tbody > tr {
+    height: 65px;
+}
+.table thead tr {
+    height: 35px;
+}
+table p {
+    margin: 5px 0px;
+    font-size: 12px;
+    max-width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.light_icon {
+    padding:0px 3px!important;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #e7eaec;
+    line-height: 1.42857;
+    padding: 2px 8px 5px;
+}
+table p.big {
+    font-size: 14px;
+}
+table tr td {
+    vertical-align:middle!important;
+}
+.sk-spinner-double-bounce .sk-double-bounce1, .sk-spinner-double-bounce .sk-double-bounce2 {
+    opacity: 0.9;
+}
+.sk-spinner-double-bounce .orange_light {
+    background-color:#f8ac59;
+}
+.sk-spinner-double-bounce .red_light {
+    background-color:#ed5565;
+}
+.sk-spinner-light {
+    width: 18px!important;
+    height: 18px!important;
+}
+.tag_sign {
+    width: 13px;
+    height: 14px;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 0;
+    padding: 0 4px 1px;
+    background-color: #ccc;
+    margin-right: 5px;
+}
+table.dataTable thead .sorting_asc {
+    background-img: none;
+}
+table.dataTable thead .sorting {
+    background: none;
+}
+table thead tr th {
+    vertical-align: middle!important;
+}
+.table.dataTable thead
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+.salesman-icon {
+    width: 15px;
+    height: 16px;
+    display: inline-block;
+    background: url(../img/data_salary_icon.png) no-repeat center;
+    vertical-align: -3px;
+    margin-right: 5px;
+}
+.page_content {
+    margin: 0 auto;
+}
+.fa_style {
+    display: inline-block;
+    background:url(../img/fa_style.jpg) no-repeat center;
+    width: 30px;
+    height: 30px;
+    border-radius:3px;
+    cursor: pointer;
+}
+.fa_down {
+    position: relative;
+    left:4px;
+    bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+}
+.big a {
+    text-decoration: underline;
+}
+
+.table_content {
+    padding-bottom: 25px;
+}
+.pagination {
+    margin: 10px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pagergoto {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.page_box {
+    font-family: "Microsoft Yahei";
+}
+.pagination {
+    margin:  10px 0px;
+}
+.go_btn {
+    height: 26px;
+    border:1px solid #428fcc;
+    background:#428fcc;
+    color: #fff;
+    border-radius: 2px;
+}
+.go_btn:hover {
+    background:#3484c3;
+}
+.go_input {
+    width: 80px;
+    height: 26px;
+    padding: 2px 2px 2px 5px;
+    border: 1px solid #e5e6e7;
+}
+.go_input:focus {
+    border-color: #1ab394 !important;
+    outline: none;
+}
+.go_text {
+    font-family: "Microsoft Yahei";
+}
+
+.sign_normal {
+    margin-right: 5px;
+    padding: 0px 1px;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 2px;
+    background-color: #52cdec;
+}
+
